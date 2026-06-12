@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>ひかり電設 | 電気工事・コンセント増設・照明取付（デザインサンプル）</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='16' fill='%230b6dc4'/%3E%3Cpath d='M17 6L10 18h5l-1 8 8-12h-5l1-8z' fill='%23fff'/%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--blue:#0b6dc4;--lblue:#e8f3fc;--dark:#163a57;--text:#26343f;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Noto Sans JP',sans-serif;color:var(--text);line-height:1.8;}
+.demo-note{background:#fff3cd;color:#7a5c00;text-align:center;font-size:12px;padding:6px;}
+header{background:#fff;box-shadow:0 1px 8px rgba(0,0,0,.06);position:sticky;top:0;z-index:10;}
+.header-inner{max-width:1060px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:12px 20px;}
+.logo{font-weight:900;font-size:21px;color:var(--blue);}
+.logo small{display:block;font-size:11px;color:#678;font-weight:500;}
+.head-cta{display:flex;align-items:center;gap:14px;}
+.head-tel{text-align:right;font-size:11px;color:#678;}
+.head-tel strong{display:block;font-size:21px;font-weight:900;color:var(--dark);}
+.head-btn{background:var(--blue);color:#fff;text-decoration:none;font-size:13px;font-weight:700;padding:10px 20px;border-radius:30px;}
+.hero{background:linear-gradient(180deg,var(--lblue),#fff);padding:70px 20px;text-align:center;}
+.hero .badge{display:inline-block;background:#fff;border:1px solid var(--blue);color:var(--blue);font-size:13px;font-weight:700;border-radius:30px;padding:5px 20px;}
+.hero h1{font-size:38px;font-weight:900;color:var(--dark);margin-top:18px;line-height:1.5;}
+.hero h1 em{font-style:normal;color:var(--blue);}
+.hero p{margin-top:14px;color:#456;font-size:15px;}
+.hero .cta-row{margin-top:30px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+.hero .cta{background:var(--blue);color:#fff;text-decoration:none;font-weight:900;font-size:16px;padding:16px 42px;border-radius:40px;box-shadow:0 4px 14px rgba(11,109,196,.35);}
+.hero .cta.sub{background:#fff;color:var(--blue);border:2px solid var(--blue);box-shadow:none;}
+.ticker{background:var(--dark);color:#fff;text-align:center;font-size:14px;padding:12px;}
+.ticker b{color:#7fc4ff;}
+section{padding:70px 20px;}
+.inner{max-width:1060px;margin:0 auto;}
+.sec-title{text-align:center;font-size:28px;font-weight:900;color:var(--dark);margin-bottom:10px;}
+.sec-sub{text-align:center;color:#678;font-size:14px;margin-bottom:42px;}
+.svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px;}
+.svc-card{background:#fff;border:1px solid #dfe9f2;border-radius:12px;padding:28px 22px;text-align:center;transition:.2s;}
+.svc-card .ico{width:64px;height:64px;margin:0 auto 14px;border-radius:50%;background:var(--lblue);display:flex;align-items:center;justify-content:center;}
+.svc-card .ico svg{width:30px;height:30px;stroke:var(--blue);fill:none;stroke-width:2;}
+.svc-card h3{font-size:16px;color:var(--dark);}
+.svc-card p{font-size:13px;color:#678;margin-top:8px;}
+.svc-card .pr{margin-top:12px;font-weight:900;color:var(--blue);font-size:15px;}
+.alt{background:var(--lblue);}
+.reasons{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;}
+.reason{background:#fff;border-radius:12px;padding:28px;display:flex;gap:18px;}
+.reason .num{font-size:30px;font-weight:900;color:var(--blue);opacity:.35;line-height:1;}
+.reason h3{font-size:16px;color:var(--dark);margin-bottom:6px;}
+.reason p{font-size:13px;color:#678;}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.05);}
+th,td{padding:15px 18px;font-size:14px;text-align:left;border-bottom:1px solid #edf2f7;}
+th{background:var(--blue);color:#fff;font-weight:700;}
+td.num{text-align:right;font-weight:900;color:var(--dark);white-space:nowrap;}
+.note{font-size:12px;color:#789;margin-top:10px;text-align:center;}
+.area{text-align:center;}
+.area .chips{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;max-width:640px;margin:0 auto;}
+.area .chips span{background:#fff;border:1px solid #b9d4ea;color:var(--dark);font-weight:700;font-size:15px;border-radius:30px;padding:10px 28px;}
+.area .note2{margin-top:18px;font-size:13px;color:#678;}
+.company-card{max-width:680px;margin:0 auto;background:#fff;border:1px solid #dfe9f2;border-radius:12px;overflow:hidden;}
+.company-card dl{display:grid;grid-template-columns:160px 1fr;}
+.company-card dt{padding:14px 18px;background:var(--lblue);color:var(--dark);font-weight:700;font-size:13px;border-bottom:1px solid #dfe9f2;}
+.company-card dd{padding:14px 18px;font-size:14px;border-bottom:1px solid #edf2f7;}
+.contact{background:linear-gradient(135deg,var(--blue),#0a5aa3);color:#fff;text-align:center;border-radius:0;}
+.contact h2{font-size:28px;font-weight:900;}
+.contact p{margin-top:10px;font-size:14px;opacity:.95;}
+.contact .tel{display:block;font-size:40px;font-weight:900;margin-top:16px;color:#fff;text-decoration:none;}
+.contact .small{font-size:13px;opacity:.85;}
+.contact .line{display:inline-block;margin-top:20px;background:#06c755;color:#fff;text-decoration:none;font-weight:700;padding:14px 44px;border-radius:40px;}
+footer{background:var(--dark);color:#9db4c7;text-align:center;font-size:12px;padding:24px;}
+.fixbar{display:none;}
+@media(max-width:760px){
+.hero h1{font-size:27px;}
+.head-tel{display:none;}
+.reasons{grid-template-columns:1fr;}
+.company-card dl{grid-template-columns:125px 1fr;}
+body{padding-bottom:58px;}
+.fixbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:50;box-shadow:0 -2px 10px rgba(0,0,0,.15);}
+.fixbar a{flex:1;text-align:center;padding:17px 8px;font-weight:700;font-size:14px;color:#fff;text-decoration:none;}
+.fixbar .call{background:var(--blue);}
+.fixbar .ln{background:#06c755;}
+}
+</style>
+</head>
+<body>
+<div class="demo-note">このサイトはデザインサンプルです。会社名・数値はすべて架空のものです。</div>
+<header>
+  <div class="header-inner">
+    <div class="logo">ひかり電設<small>第一種電気工事士の店</small></div>
+    <div class="head-cta">
+      <div class="head-tel">8:00〜20:00 年中無休<strong><a href="tel:0000000000" style="color:inherit;text-decoration:none">000-0000-0000</a></strong></div>
+      <a class="head-btn" href="#contact">無料見積り</a>
+    </div>
+  </div>
+</header>
+
+<div class="hero">
+  <span class="badge">出張費・見積り 0円</span>
+  <h1>コンセント1個から、<br>その日のうちに<em>駆けつけます</em>。</h1>
+  <p>コンセント増設・照明・スイッチ・分電盤。資格を持つ電気のプロが安全に施工します。</p>
+  <div class="cta-row">
+    <a class="cta" href="#contact">今すぐ電話で相談</a>
+    <a class="cta sub" href="#price">料金を見る</a>
+  </div>
+</div>
+
+<div class="ticker">ただいま <b>最短当日</b> 訪問できます（平日・土曜）</div>
+
+<section>
+  <div class="inner">
+    <h2 class="sec-title">よくあるご依頼</h2>
+    <p class="sec-sub">「こんな小さなこと頼んでいいの?」が、いちばん多いご依頼です。</p>
+    <div class="svc">
+      <div class="svc-card">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M13 2L4 14h6l-1 8 9-12h-6l1-8z"/></svg></div>
+        <h3>コンセント増設・交換</h3><p>キッチン・洗面所・在宅ワーク部屋に。アース付きへの交換も。</p><div class="pr">8,800円〜</div>
+      </div>
+      <div class="svc-card">
+        <div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="10" r="5"/><path d="M9 18h6M10 21h4"/></svg></div>
+        <h3>照明・シーリング取付</h3><p>引掛シーリング新設、ダウンライト交換、間接照明の設置。</p><div class="pr">6,600円〜</div>
+      </div>
+      <div class="svc-card">
+        <div class="ico"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h3"/></svg></div>
+        <h3>分電盤・ブレーカー</h3><p>頻繁にブレーカーが落ちる、古い分電盤の交換、回路増設。</p><div class="pr">16,500円〜</div>
+      </div>
+      <div class="svc-card">
+        <div class="ico"><svg viewBox="0 0 24 24"><path d="M5 12a7 7 0 0 1 14 0M2 12a10 10 0 0 1 20 0M12 12v9"/></svg></div>
+        <h3>エアコン専用回路</h3><p>エアコン設置前の専用コンセント工事。200V化も対応します。</p><div class="pr">14,300円〜</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="inner">
+    <h2 class="sec-title">ひかり電設が選ばれる理由</h2>
+    <p class="sec-sub">小さな工事専門だから、フットワークが違います。</p>
+    <div class="reasons">
+      <div class="reason"><div class="num">01</div><div><h3>有資格者が必ず施工</h3><p>電気工事は資格が必要な工事です。当店は第一種電気工事士が全件を担当します。</p></div></div>
+      <div class="reason"><div class="num">02</div><div><h3>総額を先に提示</h3><p>作業前に総額をお伝えし、ご了承いただいてから作業開始。後からの追加請求はありません。</p></div></div>
+      <div class="reason"><div class="num">03</div><div><h3>1ヶ所だけでも歓迎</h3><p>コンセント1個、スイッチ1個の交換でも喜んで伺います。出張費は無料です。</p></div></div>
+      <div class="reason"><div class="num">04</div><div><h3>賠償責任保険 加入済み</h3><p>万一の事故にも備えた保険に加入。施工後の不具合は無償で手直しします。</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="price">
+  <div class="inner">
+    <h2 class="sec-title">料金のめやす</h2>
+    <p class="sec-sub">出張費・駐車費込み。部材費は実費です。</p>
+    <table>
+      <tr><th>作業内容</th><th>価格（税込）</th></tr>
+      <tr><td>コンセント交換（同位置）</td><td class="num">8,800円〜</td></tr>
+      <tr><td>コンセント増設（露出配線）</td><td class="num">13,200円〜</td></tr>
+      <tr><td>引掛シーリング取付</td><td class="num">6,600円〜</td></tr>
+      <tr><td>スイッチ交換（ほたる・調光）</td><td class="num">7,700円〜</td></tr>
+      <tr><td>エアコン専用回路 新設</td><td class="num">14,300円〜</td></tr>
+      <tr><td>分電盤交換</td><td class="num">66,000円〜</td></tr>
+    </table>
+    <p class="note">建物の構造により配線方法が変わるため、現地で正式見積りを提示します。</p>
+  </div>
+</section>
+
+<section class="alt area">
+  <div class="inner">
+    <h2 class="sec-title">対応エリア</h2>
+    <p class="sec-sub">店舗から車で40分圏内に伺います</p>
+    <div class="chips">
+      <span>〇〇市全域</span><span>△△市</span><span>□□区</span><span>◇◇町</span><span>××市の一部</span>
+    </div>
+    <p class="note2">上記以外のエリアもまずはご相談ください。出張費のお見積りを事前にお伝えします。</p>
+  </div>
+</section>
+
+<section>
+  <div class="inner">
+    <h2 class="sec-title">会社概要</h2>
+    <p class="sec-sub">資格・登録・保険、すべて明示します。</p>
+    <div class="company-card">
+      <dl>
+        <dt>屋号</dt><dd>ひかり電設（サンプル表記）</dd>
+        <dt>代表</dt><dd>光田 太郎（第一種電気工事士）</dd>
+        <dt>所在地</dt><dd>〇〇県〇〇市〇〇 1-2-3</dd>
+        <dt>登録</dt><dd>登録電気工事業者 〇〇県知事登録 第00000号</dd>
+        <dt>加入保険</dt><dd>請負業者賠償責任保険</dd>
+        <dt>営業時間</dt><dd>8:00〜20:00 年中無休</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="inner">
+    <h2>電気のこと、なんでもどうぞ</h2>
+    <p>症状をお聞きして、お電話の段階で概算をお伝えします。</p>
+    <a class="tel" href="tel:0000000000">000-0000-0000</a>
+    <div class="small">受付 8:00〜20:00 年中無休</div>
+    <br>
+    <a class="line" href="#">LINEで現場写真を送って相談</a>
+  </div>
+</section>
+
+<div class="fixbar">
+  <a class="call" href="tel:0000000000">今すぐ電話する</a>
+  <a class="ln" href="#">LINEで写真を送る</a>
+</div>
+
+<footer>このページは制作デモ用のサンプルサイトです。実在の企業・店舗とは関係ありません。</footer>
+</body>
+</html>

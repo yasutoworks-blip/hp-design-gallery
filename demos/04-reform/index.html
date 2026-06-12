@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>こもれび工房 | 暮らしを整えるリフォーム（デザインサンプル）</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23f6f2ea'/%3E%3Ccircle cx='16' cy='16' r='9' fill='%235a7053'/%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&family=Noto+Sans+JP:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--green:#5a7053;--beige:#f6f2ea;--brown:#7a6a55;--text:#3c3a35;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Noto Sans JP',sans-serif;color:var(--text);line-height:2;background:#fffdf9;}
+h1,h2,h3,.serif{font-family:'Noto Serif JP',serif;}
+.demo-note{background:#fff3cd;color:#7a5c00;text-align:center;font-size:12px;padding:6px;}
+header{background:#fffdf9;border-bottom:1px solid #e8e2d6;}
+.header-inner{max-width:1000px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:18px 20px;}
+.logo{font-family:'Noto Serif JP',serif;font-size:22px;font-weight:700;color:var(--green);letter-spacing:3px;}
+.logo small{display:block;font-size:10px;letter-spacing:2px;color:var(--brown);font-weight:400;}
+nav a{color:var(--text);text-decoration:none;font-size:13px;margin-left:24px;letter-spacing:1px;}
+.hero{max-width:1000px;margin:0 auto;padding:80px 20px;display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;}
+.hero h1{font-size:34px;font-weight:600;color:var(--green);line-height:1.9;letter-spacing:2px;}
+.hero p{margin-top:24px;font-size:14px;color:#5c574e;}
+.hero .cta{display:inline-block;margin-top:32px;border:1px solid var(--green);color:var(--green);text-decoration:none;font-size:14px;letter-spacing:2px;padding:14px 44px;transition:.3s;}
+.hero .ph{height:380px;background:linear-gradient(160deg,#cdbfa3,#9aa888 60%,#5a7053);border-radius:2px 60px 2px 60px;display:flex;align-items:flex-end;justify-content:center;color:#fff;font-size:12px;letter-spacing:3px;padding-bottom:20px;}
+.philosophy{background:var(--beige);text-align:center;padding:80px 20px;}
+.philosophy .en{font-size:11px;letter-spacing:4px;color:var(--brown);}
+.philosophy h2{font-size:26px;color:var(--green);margin-top:10px;letter-spacing:3px;}
+.philosophy p{max-width:620px;margin:26px auto 0;font-size:14px;color:#5c574e;}
+section{padding:80px 20px;}
+.inner{max-width:1000px;margin:0 auto;}
+.sec-head{margin-bottom:46px;text-align:center;}
+.sec-head .en{font-size:11px;letter-spacing:4px;color:var(--brown);}
+.sec-head h2{font-size:26px;color:var(--green);letter-spacing:3px;margin-top:8px;}
+.works{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;}
+.work .ph{height:220px;border-radius:2px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:12px;letter-spacing:3px;}
+.wp1{background:linear-gradient(150deg,#c9b896,#8d9b7c);}
+.wp2{background:linear-gradient(150deg,#b5a488,#5a7053);}
+.wp3{background:linear-gradient(150deg,#d8cbb0,#a3917a);}
+.work h3{font-size:16px;margin-top:16px;color:var(--green);letter-spacing:1px;}
+.work .meta{font-size:12px;color:var(--brown);margin-top:2px;}
+.work p{font-size:13px;color:#5c574e;margin-top:8px;}
+.alt{background:var(--beige);}
+.menu-list{max-width:760px;margin:0 auto;}
+.menu-row{display:flex;justify-content:space-between;align-items:baseline;padding:20px 6px;border-bottom:1px solid #ddd5c4;gap:20px;}
+.menu-row h3{font-size:16px;color:var(--text);font-weight:600;white-space:nowrap;}
+.menu-row p{font-size:12px;color:#7d776b;flex:1;}
+.menu-row .pr{font-family:'Noto Serif JP',serif;color:var(--green);font-weight:700;white-space:nowrap;}
+.voice{max-width:760px;margin:0 auto;display:grid;gap:24px;}
+.voice-item{background:#fffdf9;border:1px solid #e8e2d6;padding:30px 34px;border-radius:2px;}
+.voice-item p{font-size:14px;color:#4c473e;}
+.voice-item .who{margin-top:14px;font-size:12px;color:var(--brown);text-align:right;}
+.contact{background:var(--green);color:#fdfbf6;text-align:center;}
+.contact h2{font-size:24px;letter-spacing:3px;}
+.contact p{margin-top:14px;font-size:14px;opacity:.9;}
+.contact .tel{display:block;font-family:'Noto Serif JP',serif;font-size:36px;margin-top:20px;letter-spacing:2px;color:#fdfbf6;text-decoration:none;}
+.company-dl{max-width:680px;margin:0 auto;background:#fffdf9;border:1px solid #e8e2d6;}
+.company-dl dl{display:grid;grid-template-columns:160px 1fr;}
+.company-dl dt{padding:14px 18px;background:var(--beige);font-weight:600;font-size:13px;color:var(--brown);border-bottom:1px solid #e8e2d6;}
+.company-dl dd{padding:14px 18px;font-size:14px;border-bottom:1px solid #efe9dd;}
+.contact .small{font-size:12px;opacity:.8;}
+.contact .btn{display:inline-block;margin-top:24px;background:#fdfbf6;color:var(--green);text-decoration:none;font-size:14px;letter-spacing:2px;padding:14px 48px;}
+footer{background:#3e4a39;color:#b8c0ae;text-align:center;font-size:11px;padding:24px;letter-spacing:1px;}
+.fixbar{display:none;}
+@media(max-width:820px){
+.hero{grid-template-columns:1fr;padding:50px 20px;}
+.hero .ph{height:240px;}
+.hero h1{font-size:26px;}
+nav{display:none;}
+.menu-row{flex-wrap:wrap;}
+.company-dl dl{grid-template-columns:125px 1fr;}
+body{padding-bottom:58px;}
+.fixbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:50;box-shadow:0 -2px 10px rgba(0,0,0,.12);}
+.fixbar a{flex:1;text-align:center;padding:17px 8px;font-weight:500;font-size:14px;color:#fdfbf6;text-decoration:none;letter-spacing:1px;}
+.fixbar .call{background:var(--green);}
+.fixbar .mail{background:var(--brown);}
+}
+</style>
+</head>
+<body>
+<div class="demo-note">このサイトはデザインサンプルです。会社名・数値はすべて架空のものです。</div>
+<header>
+  <div class="header-inner">
+    <div class="logo">こもれび工房<small>KOMOREBI KOBO</small></div>
+    <nav>
+      <a href="#works">施工事例</a>
+      <a href="#menu">リフォームメニュー</a>
+      <a href="#voice">お客様の声</a>
+      <a href="#contact">ご相談</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div>
+    <h1>直すだけじゃない、<br>暮らしを整える<br>リフォームを。</h1>
+    <p>こもれび工房は、夫婦ふたりで営む小さな工務店です。大きな会社のような派手さはありませんが、住む人の暮らしぶりまで考えた丁寧な仕事をお約束します。</p>
+    <a class="cta" href="#contact">相談してみる</a>
+  </div>
+  <div class="ph">リビング施工写真</div>
+</div>
+
+<div class="philosophy">
+  <div class="en">PHILOSOPHY</div>
+  <h2>小さな工務店だから、できること</h2>
+  <p>打ち合わせから施工、お引き渡しまで、すべて代表夫婦が担当します。「言った言わない」が起きない、顔の見える距離感。予算の中で何を優先すべきか、職人の目線で正直にお伝えします。</p>
+</div>
+
+<section id="works">
+  <div class="inner">
+    <div class="sec-head"><div class="en">WORKS</div><h2>施工事例</h2></div>
+    <div class="works">
+      <div class="work">
+        <div class="ph wp1">施工事例写真</div>
+        <h3>陽だまりのキッチン</h3>
+        <div class="meta">築26年戸建て / キッチン交換・内装 / 工期10日</div>
+        <p>壁付けキッチンを対面式に。料理中も家族と会話できる間取りになりました。</p>
+      </div>
+      <div class="work">
+        <div class="ph wp2">施工事例写真</div>
+        <h3>木の香りの洗面室</h3>
+        <div class="meta">築19年マンション / 洗面・浴室 / 工期7日</div>
+        <p>造作の洗面台にタイルをあしらって。毎朝の支度が楽しみになる空間に。</p>
+      </div>
+      <div class="work">
+        <div class="ph wp3">施工事例写真</div>
+        <h3>二人暮らしの和室改修</h3>
+        <div class="meta">築32年戸建て / 和室・断熱 / 工期12日</div>
+        <p>使っていなかった和室を、断熱を入れて温かな趣味の部屋に変えました。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="menu">
+  <div class="inner">
+    <div class="sec-head"><div class="en">MENU</div><h2>リフォームメニュー</h2></div>
+    <div class="menu-list">
+      <div class="menu-row"><h3>キッチン</h3><p>交換・移設・対面化。造作収納もご相談ください。</p><div class="pr">680,000円〜</div></div>
+      <div class="menu-row"><h3>浴室・洗面</h3><p>ユニットバス交換、造作洗面台、バリアフリー化。</p><div class="pr">780,000円〜</div></div>
+      <div class="menu-row"><h3>トイレ</h3><p>便器交換から内装一新まで。最短1日で完了します。</p><div class="pr">180,000円〜</div></div>
+      <div class="menu-row"><h3>内装・間取り変更</h3><p>壁の撤去・造作、床・建具の交換、断熱改修。</p><div class="pr">350,000円〜</div></div>
+      <div class="menu-row"><h3>小さな修繕</h3><p>建付け調整、手すり取付、網戸交換など。1ヶ所から。</p><div class="pr">11,000円〜</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="voice">
+  <div class="inner">
+    <div class="sec-head"><div class="en">VOICE</div><h2>お客様の声</h2></div>
+    <div class="voice">
+      <div class="voice-item">
+        <p>大手にも見積りをお願いしましたが、「ここは今やらなくていい」と言ってくれたのはこもれび工房さんだけでした。おかげで予算内で本当にやりたかったキッチンに集中できました。</p>
+        <div class="who">キッチンリフォーム / 50代ご夫婦</div>
+      </div>
+      <div class="voice-item">
+        <p>工事中、毎日その日の作業を写真付きで報告してくれて安心でした。仕上がりはもちろん、現場がいつもきれいに片付いていたのが印象的です。</p>
+        <div class="who">洗面・浴室リフォーム / 40代女性</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="inner">
+    <div class="sec-head"><div class="en">COMPANY</div><h2>工房について</h2></div>
+    <div class="company-dl">
+      <dl>
+        <dt>屋号</dt><dd>こもれび工房（サンプル表記）</dd>
+        <dt>代表</dt><dd>木漏 太郎・花子（二級建築士 / 増改築相談員）</dd>
+        <dt>所在地</dt><dd>〇〇県〇〇市〇〇 1-2-3</dd>
+        <dt>建設業許可</dt><dd>〇〇県知事 許可（般-00）第00000号（内装仕上工事業）</dd>
+        <dt>創業</dt><dd>2008年</dd>
+        <dt>対応エリア</dt><dd>〇〇市・△△市（車で30分圏内を大切にしています）</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="inner">
+    <h2>まずは、お話を聞かせてください</h2>
+    <p>「リフォームするか決めていない」という段階でのご相談も歓迎です。<br>しつこい営業は一切いたしません。</p>
+    <a class="tel" href="tel:0000000000">000-0000-0000</a>
+    <div class="small">受付 9:00〜18:00（水曜定休）</div>
+    <br>
+    <a class="btn" href="#">メールフォームで相談する</a>
+  </div>
+</section>
+
+<div class="fixbar">
+  <a class="call" href="tel:0000000000">電話で相談する</a>
+  <a class="mail" href="#contact">メールで相談する</a>
+</div>
+
+<footer>このページは制作デモ用のサンプルサイトです。実在の企業・店舗とは関係ありません。</footer>
+</body>
+</html>

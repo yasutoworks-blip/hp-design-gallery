@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>誠和興業 | 原状回復・内装解体（デザインサンプル）</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23121417'/%3E%3Crect x='6' y='14' width='20' height='4' fill='%23ffc400'/%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--black:#121417;--panel:#1d2127;--yellow:#ffc400;--gray:#aab2bd;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Noto Sans JP',sans-serif;background:var(--black);color:#e8eaed;line-height:1.8;}
+.demo-note{background:#fff3cd;color:#7a5c00;text-align:center;font-size:12px;padding:6px;}
+header{border-bottom:1px solid #2a2f37;}
+.header-inner{max-width:1080px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:16px 20px;}
+.logo{font-weight:900;font-size:22px;letter-spacing:2px;}
+.logo b{color:var(--yellow);}
+.logo small{display:block;font-size:10px;color:var(--gray);font-weight:400;letter-spacing:3px;}
+.head-tel{font-size:11px;color:var(--gray);text-align:right;}
+.head-tel strong{display:block;font-size:22px;font-weight:900;color:var(--yellow);}
+.hero{max-width:1080px;margin:0 auto;padding:90px 20px;}
+.hero .label{display:inline-block;border:1px solid var(--yellow);color:var(--yellow);font-size:12px;font-weight:700;letter-spacing:3px;padding:5px 18px;}
+.hero h1{font-size:50px;font-weight:900;line-height:1.3;margin-top:22px;letter-spacing:1px;}
+.hero h1 span{color:var(--yellow);}
+.hero p{margin-top:18px;color:var(--gray);max-width:560px;font-size:15px;}
+.hero .cta{display:inline-block;margin-top:34px;background:var(--yellow);color:var(--black);text-decoration:none;font-weight:900;font-size:16px;padding:17px 50px;letter-spacing:1px;}
+.stats{border-top:1px solid #2a2f37;border-bottom:1px solid #2a2f37;}
+.stats-inner{max-width:1080px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));}
+.stat{padding:28px 20px;text-align:center;border-left:1px solid #2a2f37;}
+.stat:first-child{border-left:none;}
+.stat strong{display:block;font-size:30px;font-weight:900;color:var(--yellow);}
+.stat small{font-size:12px;color:var(--gray);}
+section{padding:80px 20px;}
+.inner{max-width:1080px;margin:0 auto;}
+.sec-title{font-size:14px;font-weight:900;color:var(--yellow);letter-spacing:4px;margin-bottom:8px;}
+.sec-big{font-size:30px;font-weight:900;margin-bottom:40px;}
+.svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2px;background:#2a2f37;border:1px solid #2a2f37;}
+.svc-card{background:var(--panel);padding:34px 28px;}
+.svc-card .no{font-size:12px;color:var(--yellow);font-weight:900;letter-spacing:2px;}
+.svc-card h3{font-size:19px;font-weight:700;margin:8px 0 10px;}
+.svc-card p{font-size:13px;color:var(--gray);}
+.svc-card .pr{margin-top:16px;font-size:15px;font-weight:900;color:var(--yellow);}
+.flow{counter-reset:fs;display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:18px;}
+.flow-item{background:var(--panel);padding:26px 22px;border-left:3px solid var(--yellow);counter-increment:fs;}
+.flow-item::before{content:"0" counter(fs);font-size:24px;font-weight:900;color:var(--yellow);opacity:.5;}
+.flow-item h3{font-size:15px;margin:6px 0;}
+.flow-item p{font-size:12px;color:var(--gray);}
+.strengths{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;}
+.strength{display:flex;gap:18px;align-items:flex-start;}
+.strength .bar{width:42px;height:42px;background:var(--yellow);color:var(--black);font-weight:900;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:18px;}
+.strength h3{font-size:16px;margin-bottom:4px;}
+.strength p{font-size:13px;color:var(--gray);}
+table{width:100%;border-collapse:collapse;}
+th,td{padding:15px 18px;font-size:14px;text-align:left;border-bottom:1px solid #2a2f37;}
+th{color:var(--yellow);font-weight:700;font-size:13px;letter-spacing:1px;}
+td{color:#e8eaed;}
+td.num{text-align:right;font-weight:900;color:var(--yellow);white-space:nowrap;}
+.note{font-size:12px;color:#6c757d;margin-top:12px;}
+.contact{background:var(--yellow);color:var(--black);text-align:center;}
+.contact h2{font-size:30px;font-weight:900;}
+.contact p{margin-top:10px;font-size:14px;font-weight:500;}
+.contact .tel{display:block;font-size:44px;font-weight:900;margin-top:14px;letter-spacing:1px;color:var(--black);text-decoration:none;}
+.company-tbl{max-width:720px;}
+.company-tbl dl{display:grid;grid-template-columns:190px 1fr;}
+.company-tbl dt{padding:14px 18px;font-size:13px;font-weight:700;color:var(--yellow);border-bottom:1px solid #2a2f37;letter-spacing:1px;}
+.company-tbl dd{padding:14px 18px;font-size:14px;border-bottom:1px solid #2a2f37;}
+.contact .small{font-size:13px;}
+.contact .btn{display:inline-block;margin-top:22px;background:var(--black);color:#fff;text-decoration:none;font-weight:900;padding:16px 52px;letter-spacing:1px;}
+footer{border-top:1px solid #2a2f37;color:#6c757d;text-align:center;font-size:12px;padding:24px;}
+.fixbar{display:none;}
+@media(max-width:760px){
+.hero h1{font-size:32px;}
+.head-tel{display:none;}
+.strengths{grid-template-columns:1fr;}
+.company-tbl dl{grid-template-columns:135px 1fr;}
+body{padding-bottom:58px;}
+.fixbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:50;box-shadow:0 -2px 10px rgba(0,0,0,.5);}
+.fixbar a{flex:1;text-align:center;padding:17px 8px;font-weight:900;font-size:14px;text-decoration:none;}
+.fixbar .call{background:var(--yellow);color:var(--black);}
+.fixbar .est{background:#2a2f37;color:#fff;}
+}
+</style>
+</head>
+<body>
+<div class="demo-note">このサイトはデザインサンプルです。会社名・数値はすべて架空のものです。</div>
+<header>
+  <div class="header-inner">
+    <div class="logo">誠和<b>興業</b><small>GENJOKAIFUKU / KAITAI</small></div>
+    <div class="head-tel">見積り無料・最短即日対応<strong><a href="tel:0000000000" style="color:inherit;text-decoration:none">000-0000-0000</a></strong></div>
+  </div>
+</header>
+
+<div class="hero">
+  <span class="label">原状回復・内装解体 専門</span>
+  <h1>退去日まで、<br>あと<span>何日</span>ですか。</h1>
+  <p>店舗・オフィスの原状回復とスケルトン解体の専門業者です。オーナー・管理会社との仕様確認から産廃処理まで一括対応。タイトな工期こそ、私たちにご相談ください。</p>
+  <a class="cta" href="#contact">最短即日で現地調査を依頼</a>
+</div>
+
+<div class="stats">
+  <div class="stats-inner">
+    <div class="stat"><strong>1,500件</strong><small>累計施工実績</small></div>
+    <div class="stat"><strong>最短3日</strong><small>20坪スケルトン工事</small></div>
+    <div class="stat"><strong>100%</strong><small>マニフェスト発行率</small></div>
+    <div class="stat"><strong>0件</strong><small>引き渡し遅延（過去5年）</small></div>
+  </div>
+</div>
+
+<section>
+  <div class="inner">
+    <div class="sec-title">SERVICE</div>
+    <h2 class="sec-big">対応工事</h2>
+    <div class="svc">
+      <div class="svc-card"><div class="no">01</div><h3>店舗の原状回復</h3><p>飲食店・物販・美容室。造作撤去から内装復旧、設備の撤去まで一括で。</p><div class="pr">坪 28,000円〜</div></div>
+      <div class="svc-card"><div class="no">02</div><h3>オフィスの原状回復</h3><p>パーテーション撤去、配線撤去、床・天井復旧。ビル規定に沿って施工します。</p><div class="pr">坪 32,000円〜</div></div>
+      <div class="svc-card"><div class="no">03</div><h3>内装解体（スケルトン）</h3><p>次のテナントに向けた解体工事。アスベスト事前調査にも対応。</p><div class="pr">坪 25,000円〜</div></div>
+      <div class="svc-card"><div class="no">04</div><h3>残置物撤去・処分</h3><p>什器・厨房機器・家具の撤去処分。マニフェストを必ず発行します。</p><div class="pr">33,000円〜</div></div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--panel)">
+  <div class="inner">
+    <div class="sec-title">REASON</div>
+    <h2 class="sec-big">工期に強い理由</h2>
+    <div class="strengths">
+      <div class="strength"><div class="bar">1</div><div><h3>自社職人と自社車両</h3><p>手配待ちがないから着工が速い。深夜・早朝作業もビル規定の範囲で対応します。</p></div></div>
+      <div class="strength"><div class="bar">2</div><div><h3>管理会社とのやり取りを代行</h3><p>原状回復仕様の確認・工事申請・養生計画の提出まで、面倒な調整を引き受けます。</p></div></div>
+      <div class="strength"><div class="bar">3</div><div><h3>適正な産廃処理</h3><p>収集運搬許可業者と連携し、マニフェストを100%発行。コンプライアンスも安心です。</p></div></div>
+      <div class="strength"><div class="bar">4</div><div><h3>見積り即日提出</h3><p>現地調査の当日中に見積書を提出。退去日から逆算した工程表もお付けします。</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="inner">
+    <div class="sec-title">FLOW</div>
+    <h2 class="sec-big">ご依頼の流れ</h2>
+    <div class="flow">
+      <div class="flow-item"><h3>お問い合わせ</h3><p>図面・現況写真があれば概算を即日回答します。</p></div>
+      <div class="flow-item"><h3>現地調査</h3><p>最短即日で伺い、当日中に見積りと工程表を提出。</p></div>
+      <div class="flow-item"><h3>工事申請・着工</h3><p>管理会社への申請を代行し、養生のうえ着工します。</p></div>
+      <div class="flow-item"><h3>引き渡し</h3><p>オーナー立会いの検収まで対応。書類一式をお渡しします。</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--panel)">
+  <div class="inner">
+    <div class="sec-title">PRICE</div>
+    <h2 class="sec-big">料金のめやす</h2>
+    <table>
+      <tr><th>工事内容</th><th>規模のめやす</th><th>価格（税込）</th></tr>
+      <tr><td>飲食店 原状回復</td><td>15坪 スケルトン戻し</td><td class="num">580,000円〜</td></tr>
+      <tr><td>オフィス 原状回復</td><td>30坪 事務所仕様戻し</td><td class="num">960,000円〜</td></tr>
+      <tr><td>美容室 内装解体</td><td>12坪 スケルトン</td><td class="num">390,000円〜</td></tr>
+      <tr><td>残置物撤去</td><td>2tトラック1台分</td><td class="num">55,000円〜</td></tr>
+    </table>
+    <p class="note">建物条件（搬出経路・エレベーター有無・作業可能時間帯）により変動します。図面を頂ければ概算を即日回答します。</p>
+  </div>
+</section>
+
+<section>
+  <div class="inner">
+    <div class="sec-title">COMPANY</div>
+    <h2 class="sec-big">会社概要</h2>
+    <div class="company-tbl">
+      <dl>
+        <dt>社名</dt><dd>株式会社誠和興業（サンプル表記）</dd>
+        <dt>代表</dt><dd>誠和 太郎</dd>
+        <dt>所在地</dt><dd>〇〇県〇〇市〇〇 1-2-3</dd>
+        <dt>建設業許可</dt><dd>〇〇県知事 許可（般-00）第00000号（解体工事業・内装仕上工事業）</dd>
+        <dt>産業廃棄物</dt><dd>収集運搬許可業者と提携 / マニフェスト100%発行</dd>
+        <dt>加入保険</dt><dd>請負業者賠償責任保険・労災上乗せ保険</dd>
+        <dt>対応エリア</dt><dd>〇〇県全域・△△県の一部</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="inner">
+    <h2>退去日が決まったら、すぐご相談を</h2>
+    <p>図面と写真をお送りいただければ、概算見積りを当日中に回答します。</p>
+    <a class="tel" href="tel:0000000000">000-0000-0000</a>
+    <div class="small">受付 7:00〜21:00 年中無休</div>
+    <br>
+    <a class="btn" href="#">図面を送って概算を依頼する</a>
+  </div>
+</section>
+
+<div class="fixbar">
+  <a class="call" href="tel:0000000000">電話で見積り依頼</a>
+  <a class="est" href="#contact">図面を送って概算依頼</a>
+</div>
+
+<footer>このページは制作デモ用のサンプルサイトです。実在の企業・店舗とは関係ありません。</footer>
+</body>
+</html>
