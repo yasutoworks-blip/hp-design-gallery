@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>クイック水道 | 水漏れ・つまり・水まわり修理（デザインサンプル）</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2311294a'/%3E%3Cpath d='M16 6c4 5 6 8 6 11a6 6 0 0 1-12 0c0-3 2-6 6-11z' fill='%23e23b2e'/%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#11294a;--red:#e23b2e;--light:#eef2f7;--text:#22303f;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Noto Sans JP',sans-serif;color:var(--text);line-height:1.8;}
+.demo-note{background:#fff3cd;color:#7a5c00;text-align:center;font-size:12px;padding:6px;}
+header{background:var(--navy);color:#fff;}
+.header-inner{max-width:1080px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:14px 20px;}
+.logo{font-weight:900;font-size:22px;}
+.logo b{color:var(--red);}
+.logo small{display:block;font-size:11px;opacity:.8;font-weight:500;}
+.head-tel{text-align:right;font-size:11px;opacity:.85;}
+.head-tel strong{display:block;font-size:24px;font-weight:900;color:#ffd23b;}
+.hero{background:var(--navy);color:#fff;position:relative;overflow:hidden;}
+.hero-inner{max-width:1080px;margin:0 auto;padding:70px 20px 80px;position:relative;z-index:2;}
+.hero .badge{display:inline-block;background:var(--red);font-size:14px;font-weight:900;letter-spacing:1px;padding:6px 22px;border-radius:4px;}
+.hero h1{font-size:48px;font-weight:900;line-height:1.35;margin-top:20px;}
+.hero h1 em{font-style:normal;color:#ffd23b;}
+.hero .bigtel{margin-top:30px;background:#fff;border-radius:14px;padding:22px 30px;display:inline-flex;flex-direction:column;align-items:center;text-decoration:none;}
+.hero .bigtel .lbl{color:var(--red);font-weight:900;font-size:15px;letter-spacing:1px;}
+.hero .bigtel .num{color:var(--navy);font-size:46px;font-weight:900;line-height:1.1;letter-spacing:1px;}
+.hero .bigtel .sub{color:#667;font-size:13px;}
+.ticker{background:var(--red);color:#fff;text-align:center;font-weight:700;font-size:15px;padding:12px;}
+.price-band{background:#ffd23b;color:var(--navy);text-align:center;padding:18px;font-weight:900;font-size:20px;}
+.price-band span{font-size:30px;}
+section{padding:74px 20px;}
+.inner{max-width:1080px;margin:0 auto;}
+.sec-title{text-align:center;font-size:28px;font-weight:900;color:var(--navy);margin-bottom:8px;}
+.sec-title::after{content:"";display:block;width:60px;height:5px;background:var(--red);margin:14px auto 0;}
+.sec-sub{text-align:center;font-size:14px;color:#667;margin:18px 0 42px;}
+.trouble{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;}
+.trouble-card{background:#fff;border:1px solid #e2e8f0;border-radius:12px;padding:26px 22px;text-align:center;}
+.trouble-card .ico{width:60px;height:60px;margin:0 auto 12px;border-radius:50%;background:var(--light);display:flex;align-items:center;justify-content:center;}
+.trouble-card .ico svg{width:30px;height:30px;stroke:var(--navy);fill:none;stroke-width:2;}
+.trouble-card h3{font-size:16px;color:var(--navy);}
+.trouble-card p{font-size:13px;color:#667;margin-top:6px;}
+.trouble-card .pr{margin-top:12px;font-weight:900;color:var(--red);font-size:16px;}
+.alt{background:var(--light);}
+.flow{counter-reset:fs;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;}
+.flow-item{background:#fff;border-radius:12px;padding:26px 22px;border-top:4px solid var(--navy);counter-increment:fs;}
+.flow-item::before{content:counter(fs);display:flex;width:40px;height:40px;border-radius:50%;background:var(--navy);color:#fff;font-weight:900;font-size:18px;align-items:center;justify-content:center;}
+.flow-item h3{font-size:15px;color:var(--navy);margin:10px 0 4px;}
+.flow-item p{font-size:13px;color:#667;}
+table{width:100%;border-collapse:collapse;background:#fff;box-shadow:0 3px 14px rgba(0,0,0,.05);border-radius:12px;overflow:hidden;}
+th,td{padding:15px 18px;font-size:14px;text-align:left;border-bottom:1px solid #eef2f7;}
+th{background:var(--navy);color:#fff;font-weight:500;}
+td.num{text-align:right;font-weight:900;color:var(--red);white-space:nowrap;}
+.note{font-size:12px;color:#789;margin-top:12px;text-align:center;}
+.company{max-width:720px;margin:0 auto;}
+.company dl{display:grid;grid-template-columns:200px 1fr;background:#fff;border:1px solid #e2e8f0;border-radius:12px;overflow:hidden;}
+.company dt{padding:15px 18px;background:var(--light);font-weight:700;font-size:13px;color:var(--navy);border-bottom:1px solid #e2e8f0;}
+.company dd{padding:15px 18px;font-size:14px;border-bottom:1px solid #eef2f7;}
+.contact{background:var(--navy);color:#fff;text-align:center;}
+.contact h2{font-size:28px;font-weight:900;}
+.contact p{margin-top:10px;font-size:14px;opacity:.9;}
+.contact .tel{display:block;font-size:46px;font-weight:900;margin-top:16px;color:#ffd23b;text-decoration:none;}
+.contact .small{font-size:13px;opacity:.85;}
+.contact .line{display:inline-block;margin-top:22px;background:#06c755;color:#fff;text-decoration:none;font-weight:700;padding:14px 46px;border-radius:40px;}
+footer{background:#0b1d36;color:#8fa3bd;text-align:center;font-size:12px;padding:24px;}
+.fixbar{display:none;}
+@media(max-width:760px){
+.hero h1{font-size:31px;}
+.head-tel{display:none;}
+.hero .bigtel .num{font-size:38px;}
+.company dl{grid-template-columns:140px 1fr;}
+body{padding-bottom:58px;}
+.fixbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:50;box-shadow:0 -2px 10px rgba(0,0,0,.3);}
+.fixbar a{flex:1;text-align:center;padding:17px 8px;font-weight:900;font-size:14px;text-decoration:none;}
+.fixbar .call{background:var(--red);color:#fff;}
+.fixbar .ln{background:#06c755;color:#fff;}
+}
+</style>
+</head>
+<body>
+<div class="demo-note">このサイトはデザインサンプルです。会社名・数値はすべて架空のものです。</div>
+<header>
+  <div class="header-inner">
+    <div class="logo">クイック<b>水道</b><small>水漏れ・つまり・水まわり修理</small></div>
+    <div class="head-tel">年中無休・即日対応<strong><a href="tel:0000000000" style="color:inherit;text-decoration:none">000-0000-0000</a></strong></div>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-inner">
+    <span class="badge">水のトラブル 緊急対応</span>
+    <h1>水漏れ・つまり、<br><em>最短20分</em>で<br>駆けつけます。</h1>
+    <a class="bigtel" href="tel:0000000000">
+      <span class="lbl">年中無休 24時間受付</span>
+      <span class="num">000-0000-0000</span>
+      <span class="sub">タップでそのまま電話できます</span>
+    </a>
+  </div>
+</div>
+
+<div class="ticker">ただいま受付中。お電話1本で、すぐにお伺いします。</div>
+<div class="price-band">基本料金 <span>3,300円〜</span>（出張費・見積り無料）</div>
+
+<section>
+  <div class="inner">
+    <h2 class="sec-title">こんな水のトラブルに</h2>
+    <p class="sec-sub">どんな小さな症状でも、まずはお電話ください</p>
+    <div class="trouble">
+      <div class="trouble-card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 3c4 5 6 8 6 11a6 6 0 0 1-12 0c0-3 2-6 6-11z"/></svg></div><h3>蛇口・水漏れ</h3><p>ポタポタ漏れ、パッキン交換、混合栓の交換。</p><div class="pr">3,300円〜</div></div>
+      <div class="trouble-card"><div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12h8"/></svg></div><h3>トイレのつまり</h3><p>流れない・水位が上がる・あふれそう。</p><div class="pr">5,500円〜</div></div>
+      <div class="trouble-card"><div class="ico"><svg viewBox="0 0 24 24"><path d="M5 9h14l-1 11H6z"/><path d="M9 9V5h6v4"/></svg></div><h3>排水のつまり</h3><p>キッチン・洗面・お風呂の流れが悪い。</p><div class="pr">5,500円〜</div></div>
+      <div class="trouble-card"><div class="ico"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 12h8"/></svg></div><h3>給湯器・設備交換</h3><p>お湯が出ない、温水洗浄便座の取付。</p><div class="pr">8,800円〜</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="inner">
+    <h2 class="sec-title">ご依頼の流れ</h2>
+    <p class="sec-sub">お電話から作業完了まで、最短当日です</p>
+    <div class="flow">
+      <div class="flow-item"><h3>お電話</h3><p>症状をお聞きし、概算と到着時間をお伝えします。</p></div>
+      <div class="flow-item"><h3>訪問・点検</h3><p>最短20分で到着。現場を確認します。</p></div>
+      <div class="flow-item"><h3>お見積り</h3><p>作業前に総額を提示。ご納得後に作業します。</p></div>
+      <div class="flow-item"><h3>作業・完了</h3><p>その場で修理。お支払いは現金・カード対応。</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="inner">
+    <h2 class="sec-title">料金のめやす</h2>
+    <p class="sec-sub">作業前に必ず総額をお伝えします。追加請求はありません</p>
+    <table>
+      <tr><th>作業内容</th><th>価格（税込）</th></tr>
+      <tr><td>蛇口のパッキン交換</td><td class="num">3,300円〜</td></tr>
+      <tr><td>トイレのつまり除去</td><td class="num">5,500円〜</td></tr>
+      <tr><td>排水管の高圧洗浄</td><td class="num">8,800円〜</td></tr>
+      <tr><td>混合水栓の交換</td><td class="num">11,000円〜</td></tr>
+      <tr><td>温水洗浄便座の取付</td><td class="num">9,900円〜</td></tr>
+    </table>
+    <p class="note">部材費は別途実費です。建物の状況により変わる場合があり、現地で正式見積りを提示します。</p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="inner">
+    <h2 class="sec-title">会社概要</h2>
+    <p class="sec-sub"></p>
+    <div class="company">
+      <dl>
+        <dt>屋号</dt><dd>クイック水道（サンプル表記）</dd>
+        <dt>代表</dt><dd>水野 太郎（給水装置工事主任技術者）</dd>
+        <dt>所在地</dt><dd>〇〇県〇〇市〇〇 1-2-3</dd>
+        <dt>指定給水装置工事事業者</dt><dd>〇〇市指定 第00000号</dd>
+        <dt>加入保険</dt><dd>請負業者賠償責任保険</dd>
+        <dt>対応エリア</dt><dd>〇〇市・△△市・□□市とその近郊</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="inner">
+    <h2>水のトラブル、今すぐご連絡を</h2>
+    <p>年中無休・24時間受付。お電話1本ですぐ駆けつけます。</p>
+    <a class="tel" href="tel:0000000000">000-0000-0000</a>
+    <div class="small">出張費・見積り無料</div>
+    <br>
+    <a class="line" href="#">LINEで状況を送って相談</a>
+  </div>
+</section>
+
+<div class="fixbar">
+  <a class="call" href="tel:0000000000">今すぐ電話する</a>
+  <a class="ln" href="#">LINEで相談</a>
+</div>
+
+<footer>このページは制作デモ用のサンプルサイトです。実在の企業・店舗とは関係ありません。</footer>
+</body>
+</html>
