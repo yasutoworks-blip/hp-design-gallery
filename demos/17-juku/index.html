@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>あすなろ学習塾 | 「わかった」を、毎日つくる塾。（デザインサンプル）</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232447c9'/%3E%3Cpath d='M9 22l7-12 7 12h-4l-3-5.5L13 22z' fill='%23ffd234'/%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--blue:#2447c9;--deep:#18308f;--yellow:#ffd234;--light:#eef2fd;--ink:#1f2637;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Noto Sans JP',sans-serif;color:var(--ink);line-height:1.9;background:#fff;}
+.demo-note{background:#fff3cd;color:#7a5c00;text-align:center;font-size:12px;padding:6px;}
+header{position:sticky;top:0;background:#fff;box-shadow:0 1px 8px rgba(0,0,0,.07);z-index:20;}
+.header-inner{max-width:1080px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:12px 20px;}
+.logo{font-weight:900;font-size:22px;color:var(--blue);}
+.logo small{display:block;font-size:11px;color:#7c86a0;font-weight:700;}
+.head-cta{display:flex;align-items:center;gap:14px;}
+.head-tel{text-align:right;font-size:11px;color:#7c86a0;}
+.head-tel b{display:block;font-size:19px;color:var(--ink);letter-spacing:1px;}
+.head-btn{background:var(--blue);color:#fff;text-decoration:none;font-size:13px;font-weight:900;padding:11px 24px;border-radius:6px;white-space:nowrap;}
+.hero{background:var(--blue);color:#fff;position:relative;overflow:hidden;}
+.hero::after{content:"";position:absolute;right:-80px;top:-80px;width:340px;height:340px;border-radius:50%;background:rgba(255,210,52,.18);}
+.hero-inner{max-width:1080px;margin:0 auto;padding:60px 20px 48px;display:grid;grid-template-columns:1.15fr 1fr;gap:36px;align-items:center;position:relative;z-index:1;}
+.hero .kicker{display:inline-block;background:var(--yellow);color:var(--deep);font-size:13px;font-weight:900;padding:5px 16px;border-radius:20px;}
+.hero h1{font-size:38px;font-weight:900;line-height:1.45;margin-top:16px;}
+.hero h1 em{font-style:normal;color:var(--yellow);}
+.hero p{margin-top:14px;font-size:15px;opacity:.95;}
+.hero-cta{margin-top:26px;display:flex;gap:12px;flex-wrap:wrap;}
+.btn-main{background:var(--yellow);color:var(--deep);text-decoration:none;font-weight:900;padding:16px 34px;border-radius:8px;font-size:15px;}
+.btn-sub{border:2px solid #fff;color:#fff;text-decoration:none;font-weight:900;padding:14px 28px;border-radius:8px;font-size:15px;}
+.hero-photo{height:300px;border-radius:12px;background:linear-gradient(135deg,#3d5cd4,#2c49bd);border:1px solid rgba(255,255,255,.25);display:flex;align-items:center;justify-content:center;color:#b9c6f2;font-size:14px;font-weight:700;letter-spacing:2px;}
+.strip{background:var(--deep);color:#fff;}
+.strip-inner{max-width:1080px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);text-align:center;padding:20px;gap:10px;}
+.strip b{display:block;font-size:24px;font-weight:900;color:var(--yellow);}
+.strip span{font-size:12px;opacity:.9;}
+section{max-width:1080px;margin:0 auto;padding:60px 20px;}
+.sec-label{color:var(--blue);font-size:13px;font-weight:900;letter-spacing:3px;}
+h2{font-size:28px;font-weight:900;margin:6px 0 30px;}
+.courses{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.course{background:#fff;border:2px solid #e2e8f8;border-radius:12px;padding:26px;position:relative;}
+.course .grade{display:inline-block;background:var(--light);color:var(--blue);font-size:12px;font-weight:900;padding:4px 12px;border-radius:6px;}
+.course h3{font-size:18px;font-weight:900;margin:10px 0 8px;}
+.course p{font-size:13.5px;color:#49536b;}
+.course .price{margin-top:14px;border-top:2px solid var(--light);padding-top:12px;font-size:13px;}
+.course .price b{font-size:22px;color:var(--blue);}
+.note{font-size:12px;color:#8b93a8;margin-top:12px;}
+.method{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;}
+.m-card{background:var(--light);border-radius:12px;padding:26px;display:flex;gap:16px;}
+.m-card .num{flex-shrink:0;width:46px;height:46px;border-radius:10px;background:var(--blue);color:var(--yellow);font-weight:900;font-size:19px;display:flex;align-items:center;justify-content:center;}
+.m-card h3{font-size:16.5px;font-weight:900;}
+.m-card p{font-size:13.5px;color:#49536b;margin-top:5px;}
+.schedule{background:#fff;border:2px solid #e2e8f8;border-radius:12px;overflow:hidden;}
+.schedule table{width:100%;border-collapse:collapse;}
+.schedule th,.schedule td{padding:13px 16px;font-size:13.5px;text-align:center;border-bottom:1px solid #edf1fb;}
+.schedule th{background:var(--light);font-weight:900;color:var(--deep);}
+.schedule td:first-child{font-weight:900;text-align:left;}
+.voice{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;}
+.v-card{background:#fff;border:2px solid #e2e8f8;border-radius:12px;padding:24px;}
+.v-card .who{font-size:12px;font-weight:900;color:var(--blue);}
+.v-card h3{font-size:15.5px;font-weight:900;margin:6px 0;}
+.v-card p{font-size:13.5px;color:#49536b;}
+.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+.step{background:var(--light);border-radius:12px;padding:22px 18px;text-align:center;}
+.step .sn{color:var(--blue);font-weight:900;font-size:13px;letter-spacing:2px;}
+.step h3{font-size:15px;font-weight:900;margin:6px 0;}
+.step p{font-size:12.5px;color:#49536b;}
+.info table{width:100%;border-collapse:collapse;background:#fff;border:2px solid #e2e8f8;border-radius:12px;overflow:hidden;}
+.info th,.info td{padding:14px 18px;font-size:14px;text-align:left;border-bottom:1px solid #edf1fb;}
+.info th{background:var(--light);font-weight:900;width:40%;}
+.contact{background:var(--blue);color:#fff;}
+.contact-inner{max-width:1080px;margin:0 auto;padding:60px 20px;text-align:center;}
+.contact h2{color:#fff;}
+.contact .sec-label{color:var(--yellow);}
+.contact p{font-size:14px;opacity:.95;}
+.tel-big{font-size:40px;font-weight:900;color:var(--yellow);letter-spacing:2px;text-decoration:none;display:inline-block;margin:14px 0 4px;}
+.hours{font-size:13px;opacity:.85;}
+footer{background:var(--deep);color:#9fb0e8;text-align:center;font-size:12px;padding:22px;}
+.fixbar{display:none;}
+@media(max-width:760px){
+ body{padding-bottom:58px;}
+ .hero-inner{grid-template-columns:1fr;padding-top:36px;}
+ .hero h1{font-size:27px;}
+ .strip-inner{grid-template-columns:repeat(2,1fr);}
+ .courses,.method,.voice,.flow{grid-template-columns:1fr;}
+ .head-tel{display:none;}
+ .schedule{overflow-x:auto;}
+ .fixbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:40;}
+ .fixbar a{flex:1;text-align:center;padding:15px 0;font-size:14px;font-weight:900;text-decoration:none;}
+ .fixbar .f-tel{background:var(--deep);color:#fff;}
+ .fixbar .f-trial{background:var(--yellow);color:var(--deep);}
+}
+</style>
+</head>
+<body>
+<div class="demo-note">このサイトはデザインサンプルです。塾名・数値はすべて架空のものです。</div>
+<header>
+ <div class="header-inner">
+  <div class="logo">あすなろ学習塾<small>○○市の小・中学生対象 地域密着塾</small></div>
+  <div class="head-cta">
+   <div class="head-tel">お気軽にお電話ください<b>000-0000-0000</b></div>
+   <a class="head-btn" href="#contact">無料体験</a>
+  </div>
+ </div>
+</header>
+
+<div class="hero">
+ <div class="hero-inner">
+  <div>
+   <span class="kicker">小4〜中3対象・定員制の少人数指導</span>
+   <h1>「わかった」を、<br><em>毎日つくる</em>塾。</h1>
+   <p>あすなろ学習塾は、1クラス8名までの少人数制。大手塾のスピードについていけなかった子が、自分のペースを取り戻す場所です。まずは1週間の無料体験から。</p>
+   <div class="hero-cta">
+    <a class="btn-main" href="#contact">1週間無料体験に申し込む</a>
+    <a class="btn-sub" href="#courses">コースと授業料</a>
+   </div>
+  </div>
+  <div class="hero-photo">授業風景の写真</div>
+ </div>
+</div>
+
+<div class="strip">
+ <div class="strip-inner">
+  <div><b>1クラス8名</b><span>までの少人数制</span></div>
+  <div><b>週2回〜</b><span>通いやすい設計</span></div>
+  <div><b>定期テスト前</b><span>無料対策勉強会</span></div>
+  <div><b>開塾10年</b><span>地域密着（サンプル値）</span></div>
+ </div>
+</div>
+
+<section id="method">
+ <div class="sec-label">METHOD</div>
+ <h2>あすなろの教え方</h2>
+ <div class="method">
+  <div class="m-card"><div class="num">1</div><div><h3>「わからない」まで戻る</h3><p>中2の数学が解けない原因が小5の分数にあることはよくあります。学年にとらわれず、つまずいた場所まで戻ってやり直します。</p></div></div>
+  <div class="m-card"><div class="num">2</div><div><h3>授業のない日も自習室</h3><p>開校日はいつでも自習室を使えます。質問対応の講師が常駐しているので、家で集中できない子の勉強場所になります。</p></div></div>
+  <div class="m-card"><div class="num">3</div><div><h3>宿題は「できる量」を個別に</h3><p>多すぎる宿題は写すだけになります。一人ひとりの部活や習い事に合わせて、確実にやりきれる量を設定します。</p></div></div>
+  <div class="m-card"><div class="num">4</div><div><h3>保護者面談は年3回＋随時</h3><p>塾での様子・家庭学習の提案を定期的にお伝えします。LINEでのご相談はいつでもどうぞ。</p></div></div>
+ </div>
+</section>
+
+<section id="courses" style="padding-top:0;">
+ <div class="sec-label">COURSE</div>
+ <h2>コースと授業料（月額・税込）</h2>
+ <div class="courses">
+  <div class="course">
+   <span class="grade">小4〜小6</span>
+   <h3>小学生コース</h3>
+   <p>算数・国語を中心に、学習習慣づくりから。週2回で「勉強は毎日するもの」の土台を作ります。</p>
+   <div class="price">週2回（算・国） <b>13,200円</b>／月</div>
+  </div>
+  <div class="course">
+   <span class="grade">中1・中2</span>
+   <h3>中学生コース</h3>
+   <p>数学・英語＋理社のテスト対策。定期テスト2週間前からは対策勉強会（無料）で内申点を守ります。</p>
+   <div class="price">週2回（数・英） <b>19,800円</b>／月</div>
+  </div>
+  <div class="course">
+   <span class="grade">中3</span>
+   <h3>受験対策コース</h3>
+   <p>週3回＋日曜特訓。○○県公立入試の出題傾向に合わせた演習と、志望校別の学習計画で合格まで伴走します。</p>
+   <div class="price">週3回（5教科） <b>28,600円</b>／月</div>
+  </div>
+ </div>
+ <p class="note">※ 金額はサンプルです。入塾金11,000円・教材費半期ごと実費。ご兄弟の同時通塾は2人目の入塾金が無料です。授業料・制度の詳細は入塾説明時に書面でご案内します。</p>
+</section>
+
+<section id="schedule" style="padding-top:0;">
+ <div class="sec-label">SCHEDULE</div>
+ <h2>時間割（サンプル）</h2>
+ <div class="schedule">
+  <table>
+   <tr><th></th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th></tr>
+   <tr><td>17:00〜18:20</td><td>小学生</td><td>-</td><td>小学生</td><td>-</td><td>小学生</td></tr>
+   <tr><td>19:00〜20:20</td><td>中1</td><td>中2</td><td>中1</td><td>中2</td><td>中3</td></tr>
+   <tr><td>20:30〜21:50</td><td>中3</td><td>中3</td><td>-</td><td>中3</td><td>中3</td></tr>
+  </table>
+ </div>
+ <p class="note">※ 自習室は開校日の16:00〜21:50までいつでも利用できます。</p>
+</section>
+
+<section id="voice" style="padding-top:0;">
+ <div class="sec-label">VOICE</div>
+ <h2>保護者・生徒の声（サンプル）</h2>
+ <div class="voice">
+  <div class="v-card">
+   <div class="who">中2男子の保護者（架空の例）</div>
+   <h3>「どうせできない」と言わなくなりました。</h3>
+   <p>大手塾で自信をなくしていましたが、こちらに変えてから数学のテストで初めて80点を取り、本人が一番驚いていました。戻り学習のおかげだと思います。</p>
+  </div>
+  <div class="v-card">
+   <div class="who">中3女子・生徒（架空の例）</div>
+   <h3>自習室が「家より集中できる場所」です。</h3>
+   <p>家だとスマホを触ってしまうので、ほぼ毎日自習室に来ています。わからない問題をすぐ聞けるのがいいところ。受験まであとちょっと、がんばります。</p>
+  </div>
+ </div>
+ <p class="note">※ 掲載の声はデザインサンプル用の架空のものです。実際の制作時は本人・保護者の許可を得た実在の声に差し替えます。</p>
+</section>
+
+<section id="flow" style="padding-top:0;">
+ <div class="sec-label">TRIAL</div>
+ <h2>入塾までの流れ</h2>
+ <div class="flow">
+  <div class="step"><div class="sn">STEP 1</div><h3>お問い合わせ</h3><p>お電話またはLINEで。学習のお悩みだけのご相談も歓迎です。</p></div>
+  <div class="step"><div class="sn">STEP 2</div><h3>学習相談・学力チェック</h3><p>現在のつまずき箇所を確認し、最適なクラスをご提案します。</p></div>
+  <div class="step"><div class="sn">STEP 3</div><h3>1週間無料体験</h3><p>実際のクラスに参加。自習室も体験期間中は使い放題です。</p></div>
+  <div class="step"><div class="sn">STEP 4</div><h3>ご入塾</h3><p>お子さまの意思を確認してから。無理な勧誘は一切しません。</p></div>
+ </div>
+</section>
+
+<section id="info" style="padding-top:0;">
+ <div class="sec-label">SCHOOL</div>
+ <h2>塾概要</h2>
+ <div class="info">
+  <table>
+   <tr><th>塾名</th><td>あすなろ学習塾</td></tr>
+   <tr><th>塾長</th><td>明日成 学（架空）</td></tr>
+   <tr><th>対象</th><td>小学4年生〜中学3年生</td></tr>
+   <tr><th>所在地</th><td>○○県○○市○○町0-0-0 ○○ビル2F（○○中学校 徒歩3分）</td></tr>
+   <tr><th>開校時間</th><td>月〜金曜 16:00〜22:00（土日は講習期のみ）</td></tr>
+   <tr><th>設備</th><td>教室2部屋・自習室12席・駐輪場</td></tr>
+  </table>
+ </div>
+</section>
+
+<div class="contact" id="contact">
+ <div class="contact-inner">
+  <div class="sec-label">CONTACT</div>
+  <h2>1週間無料体験・学習相談</h2>
+  <p>「塾に行かせるべきか迷っている」という段階のご相談も歓迎です。お子さまの現状を伺い、必要がなければ入塾をおすすめしないこともあります。</p>
+  <a class="tel-big" href="tel:0000000000">000-0000-0000</a>
+  <div class="hours">受付 14:00〜21:00（月〜金）</div>
+ </div>
+</div>
+
+<footer>このページは制作サンプルです。掲載の塾名・人物・数値はすべて架空のものです。</footer>
+
+<div class="fixbar">
+ <a class="f-tel" href="tel:0000000000">電話で相談</a>
+ <a class="f-trial" href="#contact">無料体験に申し込む</a>
+</div>
+</body>
+</html>

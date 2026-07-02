@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>ジャンプ体操クラブ | 「できた！」が、からだを好きにさせる。（デザインサンプル）</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%236d28c9'/%3E%3Cpath d='M8 22c3-8 6-12 8-12s5 4 8 12' fill='none' stroke='%23c3f53c' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--purple:#6d28c9;--deep:#531e99;--lime:#c3f53c;--soft:#f4edfd;--ink:#2d2438;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'M PLUS 1p',sans-serif;color:var(--ink);line-height:1.9;background:#fff;}
+.demo-note{background:#fff3cd;color:#7a5c00;text-align:center;font-size:12px;padding:6px;}
+header{position:sticky;top:0;background:#fff;box-shadow:0 1px 10px rgba(0,0,0,.06);z-index:20;}
+.header-inner{max-width:1080px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:12px 20px;}
+.logo{font-weight:900;font-size:21px;color:var(--purple);}
+.logo small{display:block;font-size:11px;color:#9b8fae;font-weight:700;}
+.head-cta{display:flex;align-items:center;gap:14px;}
+.head-tel{text-align:right;font-size:11px;color:#9b8fae;}
+.head-tel b{display:block;font-size:19px;color:var(--ink);letter-spacing:1px;}
+.head-btn{background:var(--purple);color:#fff;text-decoration:none;font-size:13px;font-weight:900;padding:11px 24px;border-radius:30px;white-space:nowrap;}
+.hero{background:var(--purple);color:#fff;position:relative;overflow:hidden;}
+.hero::before{content:"";position:absolute;left:-60px;bottom:-100px;width:280px;height:280px;border-radius:50%;background:rgba(195,245,60,.16);}
+.hero::after{content:"";position:absolute;right:-40px;top:-60px;width:200px;height:200px;border-radius:50%;background:rgba(255,255,255,.08);}
+.hero-inner{max-width:1080px;margin:0 auto;padding:58px 20px 46px;display:grid;grid-template-columns:1.15fr 1fr;gap:36px;align-items:center;position:relative;z-index:1;}
+.hero .kicker{display:inline-block;background:var(--lime);color:var(--deep);font-size:13px;font-weight:900;padding:5px 16px;border-radius:20px;}
+.hero h1{font-size:36px;font-weight:900;line-height:1.5;margin-top:16px;}
+.hero h1 em{font-style:normal;color:var(--lime);}
+.hero p{margin-top:14px;font-size:15px;opacity:.95;}
+.hero-cta{margin-top:24px;display:flex;gap:12px;flex-wrap:wrap;}
+.btn-main{background:var(--lime);color:var(--deep);text-decoration:none;font-weight:900;padding:16px 34px;border-radius:32px;font-size:15px;}
+.btn-sub{border:2px solid #fff;color:#fff;text-decoration:none;font-weight:900;padding:14px 28px;border-radius:32px;font-size:15px;}
+.hero-photo{height:300px;border-radius:20px;background:linear-gradient(135deg,#7d3fd4,#5d23a8);border:1px solid rgba(255,255,255,.25);display:flex;align-items:center;justify-content:center;color:#cdb5ee;font-size:14px;font-weight:700;letter-spacing:2px;}
+.strip{background:var(--deep);color:#fff;}
+.strip-inner{max-width:1080px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);text-align:center;padding:20px;gap:10px;}
+.strip b{display:block;font-size:23px;font-weight:900;color:var(--lime);}
+.strip span{font-size:12px;opacity:.9;}
+section{max-width:1080px;margin:0 auto;padding:60px 20px;}
+.sec-label{color:var(--purple);font-size:13px;font-weight:900;letter-spacing:3px;}
+h2{font-size:27px;font-weight:900;margin:6px 0 30px;}
+.classes{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.class{background:#fff;border:2px solid #ece2fa;border-radius:18px;padding:26px;}
+.class .age{display:inline-block;background:var(--soft);color:var(--purple);font-size:12px;font-weight:900;padding:4px 14px;border-radius:20px;}
+.class h3{font-size:18px;font-weight:900;margin:10px 0 8px;}
+.class p{font-size:13.5px;color:#544963;}
+.class .price{margin-top:14px;border-top:2px solid var(--soft);padding-top:12px;font-size:13px;}
+.class .price b{font-size:21px;color:var(--purple);}
+.note{font-size:12px;color:#9b90ab;margin-top:12px;}
+.can{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+.can-item{background:var(--soft);border-radius:16px;padding:22px 16px;text-align:center;}
+.can-item .em{font-size:26px;font-weight:900;color:var(--purple);display:block;line-height:1.4;}
+.can-item p{font-size:12.5px;color:#544963;margin-top:6px;}
+.reasons{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+.reason{background:#fff;border:2px solid #ece2fa;border-radius:16px;padding:24px;display:flex;gap:16px;}
+.reason .num{flex-shrink:0;width:44px;height:44px;border-radius:12px;background:var(--purple);color:var(--lime);font-weight:900;font-size:18px;display:flex;align-items:center;justify-content:center;}
+.reason h3{font-size:16px;font-weight:900;}
+.reason p{font-size:13.5px;color:#544963;margin-top:5px;}
+.voice{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;}
+.v-card{background:var(--soft);border-radius:16px;padding:24px;}
+.v-card .who{font-size:12px;font-weight:900;color:var(--purple);}
+.v-card p{font-size:13.5px;color:#544963;margin-top:6px;}
+.flow{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+.step{background:#fff;border:2px solid #ece2fa;border-radius:16px;padding:22px 18px;text-align:center;}
+.step .sn{color:var(--purple);font-weight:900;font-size:13px;letter-spacing:2px;}
+.step h3{font-size:15px;font-weight:900;margin:6px 0;}
+.step p{font-size:12.5px;color:#544963;}
+.info table{width:100%;border-collapse:collapse;background:#fff;border:2px solid #ece2fa;border-radius:14px;overflow:hidden;}
+.info th,.info td{padding:14px 18px;font-size:14px;text-align:left;border-bottom:1px solid #f2ebfc;}
+.info th{background:var(--soft);font-weight:900;width:40%;}
+.contact{background:var(--purple);color:#fff;}
+.contact-inner{max-width:1080px;margin:0 auto;padding:60px 20px;text-align:center;}
+.contact h2{color:#fff;}
+.contact .sec-label{color:var(--lime);}
+.contact p{font-size:14px;opacity:.95;}
+.tel-big{font-size:40px;font-weight:900;color:var(--lime);letter-spacing:2px;text-decoration:none;display:inline-block;margin:14px 0 4px;}
+.hours{font-size:13px;opacity:.85;}
+footer{background:var(--deep);color:#b9a3dd;text-align:center;font-size:12px;padding:22px;}
+.fixbar{display:none;}
+@media(max-width:760px){
+ body{padding-bottom:58px;}
+ .hero-inner{grid-template-columns:1fr;padding-top:36px;}
+ .hero h1{font-size:27px;}
+ .strip-inner{grid-template-columns:repeat(2,1fr);}
+ .classes,.reasons,.voice,.flow{grid-template-columns:1fr;}
+ .can{grid-template-columns:repeat(2,1fr);}
+ .head-tel{display:none;}
+ .fixbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:40;}
+ .fixbar a{flex:1;text-align:center;padding:15px 0;font-size:14px;font-weight:900;text-decoration:none;}
+ .fixbar .f-tel{background:var(--deep);color:#fff;}
+ .fixbar .f-trial{background:var(--lime);color:var(--deep);}
+}
+</style>
+</head>
+<body>
+<div class="demo-note">このサイトはデザインサンプルです。クラブ名・数値はすべて架空のものです。</div>
+<header>
+ <div class="header-inner">
+  <div class="logo">ジャンプ体操クラブ<small>○○市のこども体操教室（3歳〜小6）</small></div>
+  <div class="head-cta">
+   <div class="head-tel">無料体験のご予約<b>000-0000-0000</b></div>
+   <a class="head-btn" href="#contact">無料体験</a>
+  </div>
+ </div>
+</header>
+
+<div class="hero">
+ <div class="hero-inner">
+  <div>
+   <span class="kicker">3歳〜小学6年生・マット / 跳び箱 / 鉄棒 / なわとび</span>
+   <h1>「できた！」が、<br>からだを<em>好き</em>にさせる。</h1>
+   <p>ジャンプ体操クラブは、運動が得意な子のためだけの教室ではありません。「跳び箱が怖い」「かけっこが苦手」。そんな子こそ来てほしい。スモールステップで、必ず「できた！」までたどり着かせます。</p>
+   <div class="hero-cta">
+    <a class="btn-main" href="#contact">無料体験を予約する</a>
+    <a class="btn-sub" href="#classes">クラスと月謝</a>
+   </div>
+  </div>
+  <div class="hero-photo">レッスン風景の写真</div>
+ </div>
+</div>
+
+<div class="strip">
+ <div class="strip-inner">
+  <div><b>1クラス12名</b><span>コーチ2名体制</span></div>
+  <div><b>3歳〜小6</b><span>年齢別クラス</span></div>
+  <div><b>月2回</b><span>できた！発表デー</span></div>
+  <div><b>振替OK</b><span>月1回まで無料</span></div>
+ </div>
+</div>
+
+<section id="can">
+ <div class="sec-label">GOAL</div>
+ <h2>この教室で「できた！」になること</h2>
+ <div class="can">
+  <div class="can-item"><span class="em">さか上がり</span><p>補助板と補助ベルトで段階練習。園児から挑戦できます。</p></div>
+  <div class="can-item"><span class="em">跳び箱</span><p>「怖い」を消す低い段からのスモールステップ指導。</p></div>
+  <div class="can-item"><span class="em">前転・後転</span><p>マット運動の基本から、側転・倒立前転まで。</p></div>
+  <div class="can-item"><span class="em">なわとび</span><p>前とび1回から二重とびまで、級カードで進級します。</p></div>
+ </div>
+</section>
+
+<section id="classes" style="padding-top:0;">
+ <div class="sec-label">CLASS</div>
+ <h2>クラスと月謝（税込）</h2>
+ <div class="classes">
+  <div class="class">
+   <span class="age">3歳〜年長</span>
+   <h3>キッズクラス</h3>
+   <p>遊びの中で「転がる・ぶら下がる・跳ぶ」の基本動作を経験。運動神経の土台がいちばん育つ時期です。</p>
+   <div class="price">週1回50分 <b>6,600円</b>／月</div>
+  </div>
+  <div class="class">
+   <span class="age">小1〜小3</span>
+   <h3>ジュニアクラス</h3>
+   <p>マット・跳び箱・鉄棒を種目別にレベルアップ。学校の体育が「見せ場」に変わります。</p>
+   <div class="price">週1回60分 <b>7,700円</b>／月</div>
+  </div>
+  <div class="class">
+   <span class="age">小4〜小6</span>
+   <h3>アドバンスクラス</h3>
+   <p>側転・倒立・連続技へ。体力テスト対策や、器械体操クラブへのステップアップにも対応します。</p>
+   <div class="price">週1回75分 <b>8,800円</b>／月</div>
+  </div>
+ </div>
+ <p class="note">※ 金額はサンプルです。入会金5,000円・スポーツ保険料 年800円（実費）。きょうだい割引あり（2人目から月謝10%引き）。</p>
+</section>
+
+<section id="reasons" style="padding-top:0;">
+ <div class="sec-label">POINT</div>
+ <h2>ジャンプが選ばれる理由</h2>
+ <div class="reasons">
+  <div class="reason"><div class="num">1</div><div><h3>「怖い」に寄り添うスモールステップ</h3><p>いきなり跳ばせません。踏み切り・手つき・またぎ乗りと分解して、怖さが出ない高さから積み上げます。</p></div></div>
+  <div class="reason"><div class="num">2</div><div><h3>コーチ2名で安全第一</h3><p>1クラス12名にコーチ2名。補助と見守りを分担し、目の届かない瞬間を作りません。</p></div></div>
+  <div class="reason"><div class="num">3</div><div><h3>進級カードで成長が見える</h3><p>種目ごとの級カードにスタンプを重ねる仕組み。「次はこれ」が明確だから、家でも練習したくなります。</p></div></div>
+  <div class="reason"><div class="num">4</div><div><h3>保護者は見学自由</h3><p>ガラス越しの見学スペースからいつでも見られます。月2回の「できた！発表デー」では新しい技を披露します。</p></div></div>
+ </div>
+</section>
+
+<section id="voice" style="padding-top:0;">
+ <div class="sec-label">VOICE</div>
+ <h2>保護者の声（サンプル）</h2>
+ <div class="voice">
+  <div class="v-card"><div class="who">年長男の子の保護者（架空の例）</div><p>体育ぎらいになりかけていたのに、今は「早く体操の日にならないかな」と言っています。先生が「怖いよね、わかるよ」から始めてくれるのが良かったです。</p></div>
+  <div class="v-card"><div class="who">小3女の子の保護者（架空の例）</div><p>1年通ってさか上がりができました。できた瞬間、コーチと娘がハイタッチしているのを見て、こちらが泣きそうになりました。</p></div>
+ </div>
+ <p class="note">※ 掲載の声はデザインサンプル用の架空のものです。実際の制作時は本人・保護者の許可を得た実在の声に差し替えます。</p>
+</section>
+
+<section id="flow" style="padding-top:0;">
+ <div class="sec-label">TRIAL</div>
+ <h2>無料体験の流れ</h2>
+ <div class="flow">
+  <div class="step"><div class="sn">STEP 1</div><h3>ご予約</h3><p>お電話またはLINEで。動きやすい服と水筒だけご用意ください。</p></div>
+  <div class="step"><div class="sn">STEP 2</div><h3>無料体験（1回分）</h3><p>実際のクラスに参加。終了後にお子さまの様子とおすすめクラスをお伝えします。</p></div>
+  <div class="step"><div class="sn">STEP 3</div><h3>ご入会</h3><p>お子さまが「またやりたい」と言ったらどうぞ。無理な勧誘はしません。</p></div>
+ </div>
+</section>
+
+<section id="info" style="padding-top:0;">
+ <div class="sec-label">CLUB</div>
+ <h2>クラブ概要</h2>
+ <div class="info">
+  <table>
+   <tr><th>クラブ名</th><td>ジャンプ体操クラブ</td></tr>
+   <tr><th>代表</th><td>飛田 翔（架空）／元器械体操選手・小学校教員免許保有（架空の経歴です）</td></tr>
+   <tr><th>対象</th><td>3歳〜小学6年生</td></tr>
+   <tr><th>所在地</th><td>○○県○○市○○町0-0-0 ○○ビル1F（○○駅 徒歩7分）</td></tr>
+   <tr><th>開講日</th><td>火〜金曜 15:00〜19:00 ／ 土曜 9:00〜17:00</td></tr>
+   <tr><th>設備</th><td>体操専用フロア・エアマット・見学スペース・駐車場3台</td></tr>
+  </table>
+ </div>
+</section>
+
+<div class="contact" id="contact">
+ <div class="contact-inner">
+  <div class="sec-label">CONTACT</div>
+  <h2>無料体験のご予約</h2>
+  <p>「うちの子、運動が本当に苦手で…」というご相談こそ歓迎です。まずは体験で、お子さまの「できた！」の顔を見にきてください。</p>
+  <a class="tel-big" href="tel:0000000000">000-0000-0000</a>
+  <div class="hours">受付 10:00〜19:00（月曜定休）</div>
+ </div>
+</div>
+
+<footer>このページは制作サンプルです。掲載のクラブ名・人物・数値はすべて架空のものです。</footer>
+
+<div class="fixbar">
+ <a class="f-tel" href="tel:0000000000">電話で問い合わせ</a>
+ <a class="f-trial" href="#contact">無料体験を予約</a>
+</div>
+</body>
+</html>

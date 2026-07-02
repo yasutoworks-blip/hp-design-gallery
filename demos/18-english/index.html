@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Sunny英会話 | 英語で話した。それが自信になる。（デザインサンプル）</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%23e8492f'/%3E%3Cpath d='M10 13c4-5 12-4 12 1 0 4-5 5-8 5l-4 4v-4c-2-1-2-4 0-6z' fill='%23fff7ec'/%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&family=Nunito:wght@800;900&display=swap" rel="stylesheet">
+<style>
+:root{--tomato:#e8492f;--deep:#c2371f;--navy:#233a5c;--cream:#fff7ec;--ink:#33302b;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Noto Sans JP',sans-serif;color:var(--ink);line-height:1.9;background:#fff;}
+.en{font-family:'Nunito',sans-serif;}
+.demo-note{background:#fff3cd;color:#7a5c00;text-align:center;font-size:12px;padding:6px;}
+header{position:sticky;top:0;background:#fff;box-shadow:0 1px 8px rgba(0,0,0,.06);z-index:20;}
+.header-inner{max-width:1080px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:12px 20px;}
+.logo{font-weight:900;font-size:22px;color:var(--navy);}
+.logo b{font-family:'Nunito',sans-serif;color:var(--tomato);}
+.logo small{display:block;font-size:11px;color:#93a0b5;font-weight:700;}
+.head-cta{display:flex;align-items:center;gap:14px;}
+.head-tel{text-align:right;font-size:11px;color:#93a0b5;}
+.head-tel b{display:block;font-size:19px;color:var(--navy);letter-spacing:1px;}
+.head-btn{background:var(--tomato);color:#fff;text-decoration:none;font-size:13px;font-weight:900;padding:11px 24px;border-radius:30px;white-space:nowrap;}
+.hero{background:var(--cream);position:relative;overflow:hidden;}
+.hero::before{content:"HELLO!";position:absolute;left:-10px;bottom:-30px;font-family:'Nunito',sans-serif;font-weight:900;font-size:130px;color:rgba(232,73,47,.07);letter-spacing:4px;}
+.hero-inner{max-width:1080px;margin:0 auto;padding:56px 20px 46px;display:grid;grid-template-columns:1.1fr 1fr;gap:36px;align-items:center;position:relative;}
+.hero .kicker{display:inline-block;background:var(--navy);color:#fff;font-size:12.5px;font-weight:900;padding:5px 16px;border-radius:20px;letter-spacing:1px;}
+.hero h1{font-size:36px;font-weight:900;line-height:1.5;margin-top:16px;color:var(--navy);}
+.hero h1 em{font-style:normal;color:var(--tomato);}
+.hero p{margin-top:14px;font-size:15px;}
+.hero-cta{margin-top:24px;display:flex;gap:12px;flex-wrap:wrap;}
+.btn-main{background:var(--tomato);color:#fff;text-decoration:none;font-weight:900;padding:15px 32px;border-radius:32px;font-size:15px;box-shadow:0 4px 0 var(--deep);}
+.btn-sub{background:#fff;border:2px solid var(--navy);color:var(--navy);text-decoration:none;font-weight:900;padding:13px 26px;border-radius:32px;font-size:15px;}
+.hero-photo{height:300px;border-radius:20px;background:linear-gradient(135deg,#f0e5d3,#e2d3ba);display:flex;align-items:center;justify-content:center;color:#a3926f;font-size:14px;font-weight:700;letter-spacing:2px;}
+.strip{background:var(--navy);color:#fff;}
+.strip-inner{max-width:1080px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);text-align:center;padding:20px;gap:10px;}
+.strip b{display:block;font-size:23px;font-weight:900;color:#ffc9a3;}
+.strip span{font-size:12px;opacity:.9;}
+section{max-width:1080px;margin:0 auto;padding:60px 20px;}
+.sec-label{font-family:'Nunito',sans-serif;color:var(--tomato);font-size:13px;font-weight:900;letter-spacing:3px;}
+h2{font-size:27px;font-weight:900;margin:6px 0 30px;color:var(--navy);}
+.courses{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;}
+.course{background:#fff;border:2px solid #f3e6d2;border-radius:18px;padding:28px;display:grid;grid-template-columns:1fr auto;gap:14px;align-items:start;}
+.course .age{display:inline-block;background:var(--cream);color:var(--deep);font-size:12px;font-weight:900;padding:4px 12px;border-radius:20px;}
+.course h3{font-size:18px;font-weight:900;margin:8px 0 6px;color:var(--navy);}
+.course p{font-size:13.5px;color:#565248;}
+.course .price{text-align:right;}
+.course .price b{font-size:21px;color:var(--tomato);}
+.course .price span{display:block;font-size:11.5px;color:#93a0b5;}
+.note{font-size:12px;color:#a09a8d;margin-top:12px;}
+.teachers{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;}
+.teacher{background:var(--cream);border-radius:18px;padding:26px;display:grid;grid-template-columns:130px 1fr;gap:20px;align-items:start;}
+.teacher .ph{height:150px;border-radius:12px;background:linear-gradient(135deg,#ead9c0,#dcc8a8);display:flex;align-items:center;justify-content:center;color:#a3926f;font-size:11px;font-weight:700;text-align:center;}
+.teacher h3{font-size:17px;font-weight:900;color:var(--navy);}
+.teacher .role{font-size:11.5px;color:var(--tomato);font-weight:900;letter-spacing:1px;}
+.teacher p{font-size:13px;color:#565248;margin-top:6px;}
+.reasons{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+.reason{background:#fff;border:2px solid #f3e6d2;border-radius:18px;padding:26px;text-align:center;}
+.reason .icon{width:54px;height:54px;border-radius:50%;background:var(--cream);margin:0 auto 12px;display:flex;align-items:center;justify-content:center;}
+.reason h3{font-size:16px;font-weight:900;color:var(--navy);}
+.reason p{font-size:13px;color:#565248;margin-top:6px;}
+.flow{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+.step{background:var(--cream);border-radius:16px;padding:24px 20px;text-align:center;}
+.step .sn{font-family:'Nunito',sans-serif;color:var(--tomato);font-weight:900;font-size:13px;letter-spacing:2px;}
+.step h3{font-size:15.5px;font-weight:900;margin:6px 0;color:var(--navy);}
+.step p{font-size:12.5px;color:#565248;}
+.info table{width:100%;border-collapse:collapse;background:#fff;border:2px solid #f3e6d2;border-radius:14px;overflow:hidden;}
+.info th,.info td{padding:14px 18px;font-size:14px;text-align:left;border-bottom:1px solid #f7efe2;}
+.info th{background:var(--cream);font-weight:900;width:40%;color:var(--navy);}
+.contact{background:var(--tomato);color:#fff;}
+.contact-inner{max-width:1080px;margin:0 auto;padding:60px 20px;text-align:center;}
+.contact h2{color:#fff;}
+.contact .sec-label{color:#ffd9ce;}
+.contact p{font-size:14px;opacity:.95;}
+.tel-big{font-size:40px;font-weight:900;color:#fff;letter-spacing:2px;text-decoration:none;display:inline-block;margin:14px 0 4px;}
+.hours{font-size:13px;opacity:.85;}
+footer{background:var(--navy);color:#9fb0c8;text-align:center;font-size:12px;padding:22px;}
+.fixbar{display:none;}
+@media(max-width:760px){
+ body{padding-bottom:58px;}
+ .hero-inner{grid-template-columns:1fr;padding-top:36px;}
+ .hero h1{font-size:27px;}
+ .strip-inner{grid-template-columns:repeat(2,1fr);}
+ .courses,.teachers,.reasons,.flow{grid-template-columns:1fr;}
+ .course{grid-template-columns:1fr;}
+ .course .price{text-align:left;}
+ .teacher{grid-template-columns:110px 1fr;}
+ .head-tel{display:none;}
+ .fixbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:40;}
+ .fixbar a{flex:1;text-align:center;padding:15px 0;font-size:14px;font-weight:900;text-decoration:none;color:#fff;}
+ .fixbar .f-tel{background:var(--navy);}
+ .fixbar .f-trial{background:var(--tomato);}
+}
+</style>
+</head>
+<body>
+<div class="demo-note">このサイトはデザインサンプルです。教室名・数値はすべて架空のものです。</div>
+<header>
+ <div class="header-inner">
+  <div class="logo"><b>Sunny</b>英会話<small>○○市の子ども・大人英会話教室</small></div>
+  <div class="head-cta">
+   <div class="head-tel">無料体験のご予約<b>000-0000-0000</b></div>
+   <a class="head-btn" href="#contact">無料体験</a>
+  </div>
+ </div>
+</header>
+
+<div class="hero">
+ <div class="hero-inner">
+  <div>
+   <span class="kicker">3歳〜大人まで・少人数グループ＆マンツーマン</span>
+   <h1>英語で話せた。<br>それが<em>自信になる。</em></h1>
+   <p>Sunny英会話は、外国人講師と日本人講師のペア体制で学べる地域の英会話教室です。「間違えても大丈夫」な空気の中で、話す量をたっぷり確保。まずは無料体験レッスンへどうぞ。</p>
+   <div class="hero-cta">
+    <a class="btn-main" href="#contact">無料体験を予約する</a>
+    <a class="btn-sub" href="#courses">コースと月謝</a>
+   </div>
+  </div>
+  <div class="hero-photo">レッスン風景の写真</div>
+ </div>
+</div>
+
+<div class="strip">
+ <div class="strip-inner">
+  <div><b>最大6名</b><span>の少人数グループ</span></div>
+  <div><b>2名体制</b><span>外国人＋日本人講師</span></div>
+  <div><b>3歳〜大人</b><span>年齢別クラス</span></div>
+  <div><b>振替OK</b><span>月1回まで無料</span></div>
+ </div>
+</div>
+
+<section id="courses">
+ <div class="sec-label">COURSE</div>
+ <h2>コースと月謝（税込）</h2>
+ <div class="courses">
+  <div class="course">
+   <div>
+    <span class="age">3歳〜年長</span>
+    <h3>キッズ英会話</h3>
+    <p>歌・ゲーム・絵本で「英語は楽しい」の原体験を。耳のやわらかい時期に、本物の発音にたくさん触れます。</p>
+   </div>
+   <div class="price"><b>7,700円</b><span>週1回40分／月</span></div>
+  </div>
+  <div class="course">
+   <div>
+    <span class="age">小学生</span>
+    <h3>小学生クラス</h3>
+    <p>話す・聞くに加えて、フォニックスで読み書きの基礎も。英検Jr.・英検5級〜のチャレンジも応援します。</p>
+   </div>
+   <div class="price"><b>8,800円</b><span>週1回50分／月</span></div>
+  </div>
+  <div class="course">
+   <div>
+    <span class="age">中学生・高校生</span>
+    <h3>中高生クラス</h3>
+    <p>学校の教科書対応＋スピーキング強化。定期テストと英検対策を両立し、「使える英語」で受験にも強くなります。</p>
+   </div>
+   <div class="price"><b>11,000円</b><span>週1回60分／月</span></div>
+  </div>
+  <div class="course">
+   <div>
+    <span class="age">大人</span>
+    <h3>大人の英会話</h3>
+    <p>旅行英語・おもてなし英語・やり直し英文法。同世代の仲間と楽しく続けられる、いちばん人気のクラスです。</p>
+   </div>
+   <div class="price"><b>9,900円</b><span>週1回60分／月</span></div>
+  </div>
+ </div>
+ <p class="note">※ 金額はサンプルです。入会金5,500円・教材費実費（年度初めにご案内）。マンツーマンコースは別料金です。授業料・制度の詳細は入会前に書面でご案内します。</p>
+</section>
+
+<section id="teachers" style="padding-top:0;">
+ <div class="sec-label">TEACHER</div>
+ <h2>講師紹介</h2>
+ <div class="teachers">
+  <div class="teacher">
+   <div class="ph">講師の写真</div>
+   <div>
+    <div class="role">外国人講師</div>
+    <h3>マイク先生（架空）</h3>
+    <p>カナダ出身。児童英語指導の国際資格を保有（架空の経歴です）。日本の子ども向けレッスン歴8年。休み時間の折り紙が特技です。</p>
+   </div>
+  </div>
+  <div class="teacher">
+   <div class="ph">講師の写真</div>
+   <div>
+    <div class="role">日本人講師・教室主宰</div>
+    <h3>陽田 さくら（架空）</h3>
+    <p>英検1級・TOEIC 935点（架空の経歴です）。海外営業として働いた経験から「日本人がつまずく場所」を熟知。文法の質問は日本語でどうぞ。</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="reasons" style="padding-top:0;">
+ <div class="sec-label">POINT</div>
+ <h2>Sunnyが選ばれる理由</h2>
+ <div class="reasons">
+  <div class="reason">
+   <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#e8492f" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-9 8.35 8.5 8.5 0 0 1-3.4-.65L3 21l1.8-5.6a8.38 8.38 0 0 1-.65-3.4 8.5 8.5 0 0 1 8.35-9 8.38 8.38 0 0 1 8.5 8.5z"/></svg></div>
+   <h3>話す時間が長い</h3>
+   <p>最大6名の少人数だから、1回のレッスンで一人が話す時間が大手の約2倍（当教室比・サンプル表記）。</p>
+  </div>
+  <div class="reason">
+   <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#e8492f" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+   <h3>2人の講師で安心</h3>
+   <p>外国人講師の生きた英語と、日本人講師のきめ細かいフォロー。初心者でも置いていかれません。</p>
+  </div>
+  <div class="reason">
+   <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#e8492f" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+   <h3>続けやすい仕組み</h3>
+   <p>お休みは月1回まで無料で振替OK。年2回の「英語で遊ぶ日」はご家族も参加できます。</p>
+  </div>
+ </div>
+</section>
+
+<section id="flow" style="padding-top:0;">
+ <div class="sec-label">TRIAL</div>
+ <h2>無料体験の流れ</h2>
+ <div class="flow">
+  <div class="step"><div class="sn">STEP 1</div><h3>ご予約</h3><p>お電話またはLINEで。ご希望の曜日とレベルを伺います。</p></div>
+  <div class="step"><div class="sn">STEP 2</div><h3>無料体験レッスン</h3><p>実際のクラスに参加して、雰囲気と講師との相性を確かめてください。</p></div>
+  <div class="step"><div class="sn">STEP 3</div><h3>ご入会</h3><p>体験当日に決める必要はありません。しつこい勧誘はしない約束です。</p></div>
+ </div>
+</section>
+
+<section id="info" style="padding-top:0;">
+ <div class="sec-label">SCHOOL</div>
+ <h2>教室概要</h2>
+ <div class="info">
+  <table>
+   <tr><th>教室名</th><td>Sunny英会話</td></tr>
+   <tr><th>主宰</th><td>陽田 さくら（架空）</td></tr>
+   <tr><th>所在地</th><td>○○県○○市○○町0-0-0 ○○ビル1F（○○駅 徒歩4分）</td></tr>
+   <tr><th>開講時間</th><td>火〜土曜 10:00〜21:00</td></tr>
+   <tr><th>クラス</th><td>キッズ／小学生／中高生／大人（グループ・マンツーマン）</td></tr>
+   <tr><th>駐車場</th><td>近隣コインパーキングをご利用ください（送迎の一時停車スペースあり）</td></tr>
+  </table>
+ </div>
+</section>
+
+<div class="contact" id="contact">
+ <div class="contact-inner">
+  <div class="sec-label">CONTACT</div>
+  <h2>無料体験レッスンのご予約</h2>
+  <p>「レベルがわからない」「人見知りで心配」など、なんでもご相談ください。お子さまの体験にはお付き添いいただけます。</p>
+  <a class="tel-big" href="tel:0000000000">000-0000-0000</a>
+  <div class="hours">受付 10:00〜19:00（火〜土）</div>
+ </div>
+</div>
+
+<footer>このページは制作サンプルです。掲載の教室名・人物・数値はすべて架空のものです。</footer>
+
+<div class="fixbar">
+ <a class="f-tel" href="tel:0000000000">電話で問い合わせ</a>
+ <a class="f-trial" href="#contact">無料体験を予約</a>
+</div>
+</body>
+</html>
