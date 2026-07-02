@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>けやきの丘 採用サイト | 資格がなくても、はじめられる。（デザインサンプル）</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='16' fill='%23d64570'/%3E%3Cpath d='M16 7v18M16 12l-6-4M16 12l6-4M16 18l-6-4M16 18l6-4' stroke='%23fff' stroke-width='2.4' stroke-linecap='round'/%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--rose:#d64570;--deep:#b02f56;--char:#2b2730;--paper:#faf8f9;--gray:#6f6a76;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Noto Sans JP',sans-serif;color:var(--char);line-height:1.9;background:#fff;}
+.demo-note{background:#fff3cd;color:#7a5c00;text-align:center;font-size:12px;padding:6px;}
+header{position:sticky;top:0;background:#fff;border-bottom:1px solid #eee6ea;z-index:20;}
+.header-inner{max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:14px 20px;}
+.logo{font-weight:900;font-size:20px;}
+.logo b{color:var(--rose);}
+.logo small{display:block;font-size:10px;color:#a39aa5;font-weight:700;letter-spacing:2px;}
+.head-btn{background:var(--rose);color:#fff;text-decoration:none;font-size:13px;font-weight:900;padding:12px 26px;border-radius:4px;letter-spacing:1px;}
+.hero{max-width:1100px;margin:0 auto;padding:64px 20px 30px;display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center;}
+.hero .kicker{color:var(--rose);font-size:14px;font-weight:900;letter-spacing:4px;}
+.hero h1{font-size:44px;font-weight:900;line-height:1.4;margin-top:10px;letter-spacing:1px;}
+.hero h1 em{font-style:normal;color:var(--rose);}
+.hero p{margin-top:18px;font-size:15px;color:var(--gray);}
+.hero-cta{margin-top:28px;display:flex;gap:12px;flex-wrap:wrap;}
+.btn-main{background:var(--rose);color:#fff;text-decoration:none;font-weight:900;padding:16px 36px;border-radius:4px;font-size:15px;letter-spacing:1px;}
+.btn-sub{border:2px solid var(--char);color:var(--char);text-decoration:none;font-weight:900;padding:14px 30px;border-radius:4px;font-size:15px;}
+.hero-photo{height:340px;border-radius:6px;background:linear-gradient(135deg,#ece7ea,#d9d2d7);display:flex;align-items:center;justify-content:center;color:#96909a;font-size:14px;font-weight:700;letter-spacing:2px;}
+.ticker{border-top:1px solid #eee6ea;border-bottom:1px solid #eee6ea;}
+.ticker-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);padding:22px 20px;gap:10px;text-align:center;}
+.ticker b{display:block;font-size:26px;font-weight:900;color:var(--rose);}
+.ticker span{font-size:12px;color:var(--gray);}
+section{max-width:1100px;margin:0 auto;padding:64px 20px;}
+.sec-label{color:var(--rose);font-size:13px;font-weight:900;letter-spacing:4px;}
+h2{font-size:30px;font-weight:900;margin:8px 0 30px;}
+.msg{background:var(--char);color:#f4eff2;}
+.msg-inner{max-width:1100px;margin:0 auto;padding:64px 20px;display:grid;grid-template-columns:1fr 1.3fr;gap:40px;align-items:center;}
+.msg .ph{height:280px;border-radius:6px;background:linear-gradient(135deg,#453f4b,#37323d);display:flex;align-items:center;justify-content:center;color:#8f8797;font-size:13px;letter-spacing:2px;}
+.msg h2{color:#fff;}
+.msg .sec-label{color:#e88aa8;}
+.msg p{font-size:14.5px;color:#cfc7d2;}
+.msg .sign{margin-top:16px;font-size:13px;color:#a89fae;}
+.points{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.point{background:var(--paper);border-radius:8px;padding:28px;border-top:4px solid var(--rose);}
+.point .pn{font-size:12px;font-weight:900;color:var(--rose);letter-spacing:2px;}
+.point h3{font-size:17.5px;font-weight:900;margin:8px 0;}
+.point p{font-size:13.5px;color:var(--gray);}
+.voice{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;}
+.v-card{border:1px solid #eee6ea;border-radius:8px;overflow:hidden;}
+.v-card .ph{height:170px;background:linear-gradient(135deg,#ece7ea,#dbd4d9);display:flex;align-items:center;justify-content:center;color:#96909a;font-size:12px;letter-spacing:2px;}
+.v-card .body{padding:24px;}
+.v-card .who{font-size:12px;font-weight:900;color:var(--rose);}
+.v-card h3{font-size:16.5px;font-weight:900;margin:6px 0;}
+.v-card p{font-size:13.5px;color:var(--gray);}
+.jobs{display:grid;gap:18px;}
+.job{border:1px solid #eee6ea;border-radius:8px;padding:28px;display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center;}
+.job h3{font-size:19px;font-weight:900;}
+.job h3 span{display:inline-block;background:var(--paper);color:var(--rose);font-size:11px;font-weight:900;padding:3px 10px;border-radius:4px;margin-left:10px;vertical-align:middle;}
+.job dl{margin-top:12px;display:grid;grid-template-columns:repeat(3,auto);gap:6px 28px;font-size:13.5px;width:fit-content;}
+.job dt{font-weight:900;color:var(--gray);font-size:12px;}
+.job dd b{color:var(--rose);font-size:16px;}
+.btn-job{background:var(--char);color:#fff;text-decoration:none;font-weight:900;padding:14px 30px;border-radius:4px;font-size:14px;white-space:nowrap;}
+.note{font-size:12px;color:#a39aa5;margin-top:12px;}
+.day{display:grid;grid-template-columns:repeat(6,1fr);gap:2px;background:#eee6ea;border:1px solid #eee6ea;border-radius:8px;overflow:hidden;}
+.d-slot{background:#fff;padding:18px 12px;text-align:center;}
+.d-slot .time{font-size:13px;font-weight:900;color:var(--rose);}
+.d-slot p{font-size:11.5px;color:var(--gray);margin-top:4px;line-height:1.6;}
+.faq{display:grid;gap:14px;}
+.qa{background:var(--paper);border-radius:8px;padding:22px 26px;}
+.qa h3{font-size:15.5px;font-weight:900;display:flex;gap:10px;}
+.qa h3::before{content:"Q";color:var(--rose);}
+.qa p{font-size:13.5px;color:var(--gray);margin-top:6px;padding-left:24px;}
+.company dl{display:grid;grid-template-columns:170px 1fr;border:1px solid #eee6ea;border-radius:8px;overflow:hidden;}
+.company dt{background:var(--paper);padding:14px 18px;font-size:13.5px;font-weight:900;border-bottom:1px solid #eee6ea;}
+.company dd{padding:14px 18px;font-size:13.5px;border-bottom:1px solid #eee6ea;}
+.contact{background:var(--rose);color:#fff;}
+.contact-inner{max-width:1100px;margin:0 auto;padding:64px 20px;text-align:center;}
+.contact h2{color:#fff;}
+.contact .sec-label{color:#ffd3e0;}
+.contact p{font-size:14px;opacity:.95;}
+.tel-big{font-size:40px;font-weight:900;color:#fff;letter-spacing:2px;text-decoration:none;display:inline-block;margin:14px 0 4px;}
+.hours{font-size:13px;opacity:.85;}
+.btn-white{display:inline-block;background:#fff;color:var(--rose);text-decoration:none;font-weight:900;padding:15px 40px;border-radius:4px;font-size:15px;margin-top:20px;}
+footer{background:var(--char);color:#a89fae;text-align:center;font-size:12px;padding:22px;}
+.fixbar{display:none;}
+@media(max-width:760px){
+ body{padding-bottom:58px;}
+ .logo{font-size:16px;}
+ .logo small{display:none;}
+ .head-btn{white-space:nowrap;padding:10px 16px;font-size:12px;}
+ .hero{grid-template-columns:1fr;padding-top:40px;}
+ .hero h1{font-size:30px;}
+ .ticker-inner{grid-template-columns:repeat(2,1fr);}
+ .points,.voice,.msg-inner{grid-template-columns:1fr;}
+ .job{grid-template-columns:1fr;}
+ .job dl{grid-template-columns:1fr;gap:4px;}
+ .day{grid-template-columns:repeat(2,1fr);}
+ .company dl{grid-template-columns:120px 1fr;}
+ .fixbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:40;}
+ .fixbar a{flex:1;text-align:center;padding:15px 0;font-size:14px;font-weight:900;text-decoration:none;color:#fff;}
+ .fixbar .f-tel{background:var(--char);}
+ .fixbar .f-apply{background:var(--rose);}
+}
+</style>
+</head>
+<body>
+<div class="demo-note">このサイトはデザインサンプルです。会社名・数値はすべて架空のものです。</div>
+<header>
+ <div class="header-inner">
+  <div class="logo">けやきの丘 <b>RECRUIT</b><small>KEYAKI-NO-OKA CARE SERVICE</small></div>
+  <a class="head-btn" href="#jobs">募集要項を見る</a>
+ </div>
+</header>
+
+<div class="hero">
+ <div>
+  <div class="kicker">介護スタッフ採用サイト</div>
+  <h1>資格がなくても、<br><em>はじめられる。</em></h1>
+  <p>けやきの丘で働くスタッフの半分は、未経験からのスタートでした（サンプル表記）。デイサービスと訪問介護を運営する私たちが、資格取得の費用も、学ぶ時間も、まるごと応援します。</p>
+  <div class="hero-cta">
+   <a class="btn-main" href="#jobs">募集要項を見る</a>
+   <a class="btn-sub" href="#voice">先輩の声を読む</a>
+  </div>
+ </div>
+ <div class="hero-photo">働くスタッフの写真</div>
+</div>
+
+<div class="ticker">
+ <div class="ticker-inner">
+  <div><b>約50%</b><span>未経験からの入社（サンプル値）</span></div>
+  <div><b>全額補助</b><span>初任者研修の取得費用</span></div>
+  <div><b>週2日〜</b><span>パートは週2日から</span></div>
+  <div><b>5日連続</b><span>年1回のリフレッシュ休暇</span></div>
+ </div>
+</div>
+
+<div class="msg">
+ <div class="msg-inner">
+  <div class="ph">代表・管理者の写真</div>
+  <div>
+   <div class="sec-label">MESSAGE</div>
+   <h2>「人手」ではなく、「人」を採用したい。</h2>
+   <p>介護の仕事は、誰かの毎日を支える仕事です。だから私たちは、経験や資格よりも「目の前の人を大切にできるか」を見ています。技術はあとから必ず身につきます。教える体制と、失敗しても大丈夫な空気は、私たちが用意します。</p>
+   <p class="sign">株式会社けやきの丘（架空）　代表取締役　欅 太郎</p>
+  </div>
+ </div>
+</div>
+
+<section id="points">
+ <div class="sec-label">POINT</div>
+ <h2>けやきの丘で働く3つの理由</h2>
+ <div class="points">
+  <div class="point"><div class="pn">POINT 01</div><h3>資格取得を全額会社負担</h3><p>初任者研修・実務者研修の受講費を全額補助。勤務時間内の受講もOKです。介護福祉士の受験対策講座も開いています。</p></div>
+  <div class="point"><div class="pn">POINT 02</div><h3>残業がほぼない仕組み</h3><p>記録はスマホで完結、送迎ルートは自動作成。「書き物のための残業」をなくす仕組みづくりを続けています。</p></div>
+  <div class="point"><div class="pn">POINT 03</div><h3>子育てと両立できるシフト</h3><p>「参観日は休む」が当たり前に言える職場です。週2日・1日4時間から、家庭に合わせて働けます。</p></div>
+ </div>
+</section>
+
+<section id="voice" style="padding-top:0;">
+ <div class="sec-label">VOICE</div>
+ <h2>先輩スタッフの声（サンプル）</h2>
+ <div class="voice">
+  <div class="v-card">
+   <div class="ph">スタッフの写真</div>
+   <div class="body">
+    <div class="who">介護職員・30代・入社2年目（架空の例）</div>
+    <h3>元アパレル販売。接客の経験がそのまま活きています。</h3>
+    <p>介護は「特別な人がやる仕事」だと思っていました。実際は、相手の表情を見て動くという意味で接客と同じ。研修が手厚いので、技術面の不安は3ヶ月でなくなりました。</p>
+   </div>
+  </div>
+  <div class="v-card">
+   <div class="ph">スタッフの写真</div>
+   <div class="body">
+    <div class="who">パート職員・40代・入社4年目（架空の例）</div>
+    <h3>子どもの行事を全部見に行けて、この時給。辞める理由がない。</h3>
+    <p>週3日の午前だけ働いています。急な子どもの発熱にも「お互いさま」と言い合える雰囲気で、シフトの融通が本当に利きます。いま初任者研修に会社負担で通っています。</p>
+   </div>
+  </div>
+ </div>
+ <p class="note">※ 掲載の声はデザインサンプル用の架空のものです。実際の制作時は在籍スタッフの実在の声に差し替えます。</p>
+</section>
+
+<section id="day" style="padding-top:0;">
+ <div class="sec-label">ONE DAY</div>
+ <h2>デイサービス勤務の1日</h2>
+ <div class="day">
+  <div class="d-slot"><div class="time">8:30</div><p>出勤・朝礼<br>今日の共有</p></div>
+  <div class="d-slot"><div class="time">9:00</div><p>送迎・<br>健康チェック</p></div>
+  <div class="d-slot"><div class="time">10:00</div><p>入浴介助<br>（2人体制）</p></div>
+  <div class="d-slot"><div class="time">12:00</div><p>昼食介助<br>交代で休憩60分</p></div>
+  <div class="d-slot"><div class="time">14:00</div><p>レクリエーション<br>得意分野でOK</p></div>
+  <div class="d-slot"><div class="time">17:00</div><p>記録はスマホで<br>17:30退勤</p></div>
+ </div>
+</section>
+
+<section id="jobs" style="padding-top:0;">
+ <div class="sec-label">JOBS</div>
+ <h2>募集要項</h2>
+ <div class="jobs">
+  <div class="job">
+   <div>
+    <h3>介護職員（デイサービス）<span>正社員</span><span>未経験OK</span></h3>
+    <dl>
+     <dt>月給</dt><dd><b>230,000円〜280,000円</b>（処遇改善手当込・サンプル値）</dd>
+     <dt>休日</dt><dd>年間110日・日曜定休</dd>
+     <dt>勤務</dt><dd>8:30〜17:30（残業月平均3時間）</dd>
+    </dl>
+   </div>
+   <a class="btn-job" href="#contact">この職種に応募する</a>
+  </div>
+  <div class="job">
+   <div>
+    <h3>訪問介護ヘルパー<span>パート</span><span>週2日〜</span></h3>
+    <dl>
+     <dt>時給</dt><dd><b>1,400円〜1,750円</b>（身体介護・サンプル値）</dd>
+     <dt>勤務</dt><dd>週2日・1日2時間から相談可</dd>
+     <dt>手当</dt><dd>移動手当・資格取得支援あり</dd>
+    </dl>
+   </div>
+   <a class="btn-job" href="#contact">この職種に応募する</a>
+  </div>
+  <div class="job">
+   <div>
+    <h3>看護職員（デイサービス）<span>パート</span><span>ブランクOK</span></h3>
+    <dl>
+     <dt>時給</dt><dd><b>1,900円〜</b>（正看護師・サンプル値）</dd>
+     <dt>勤務</dt><dd>週2日〜・9:00〜16:00</dd>
+     <dt>内容</dt><dd>バイタル測定・服薬管理など（医療処置ほぼなし）</dd>
+    </dl>
+   </div>
+   <a class="btn-job" href="#contact">この職種に応募する</a>
+  </div>
+ </div>
+ <p class="note">※ 給与・条件はデザインサンプル用の架空の数値です。実際の制作時は法人の労働条件どおりに記載します。</p>
+</section>
+
+<section id="faq" style="padding-top:0;">
+ <div class="sec-label">FAQ</div>
+ <h2>よくあるご質問</h2>
+ <div class="faq">
+  <div class="qa"><h3>本当に未経験でも大丈夫ですか。</h3><p>入社後2週間は先輩と2人体制で、一人立ちの時期は本人と相談して決めます。「まだ不安」と言える環境です。</p></div>
+  <div class="qa"><h3>面接ではどんなことを聞かれますか。</h3><p>難しいことは聞きません。これまでのお仕事の話と、働き方のご希望を伺います。施設見学だけのご来訪も歓迎です。</p></div>
+  <div class="qa"><h3>夜勤はありますか。</h3><p>当法人はデイサービスと訪問介護のみの運営のため、夜勤はありません。</p></div>
+ </div>
+</section>
+
+<section id="company" style="padding-top:0;">
+ <div class="sec-label">COMPANY</div>
+ <h2>会社概要</h2>
+ <div class="company">
+  <dl>
+   <dt>会社名</dt><dd>株式会社けやきの丘（架空）</dd>
+   <dt>事業内容</dt><dd>通所介護（けやきの丘デイサービス）・訪問介護（けやきの丘ヘルパーステーション）</dd>
+   <dt>指定事業所番号</dt><dd>0000000000（通所介護）／0000000000（訪問介護）</dd>
+   <dt>代表者</dt><dd>欅 太郎（架空）</dd>
+   <dt>所在地</dt><dd>○○県○○市○○町0-0-0</dd>
+   <dt>従業員数</dt><dd>28名（サンプル値）</dd>
+  </dl>
+ </div>
+</section>
+
+<div class="contact" id="contact">
+ <div class="contact-inner">
+  <div class="sec-label">ENTRY</div>
+  <h2>応募・見学のお問い合わせ</h2>
+  <p>「話を聞いてみたい」だけでも大丈夫です。在職中の方は夕方以降のお電話でも構いません。</p>
+  <a class="tel-big" href="tel:0000000000">000-0000-0000</a>
+  <div class="hours">採用担当直通 9:00〜18:00（日曜除く）</div>
+  <br>
+  <a class="btn-white" href="#contact">応募フォームはこちら（サンプル）</a>
+ </div>
+</div>
+
+<footer>このページは制作サンプルです。掲載の会社名・人物・数値はすべて架空のものです。</footer>
+
+<div class="fixbar">
+ <a class="f-tel" href="tel:0000000000">電話で問い合わせ</a>
+ <a class="f-apply" href="#jobs">募集要項を見る</a>
+</div>
+</body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>そよかぜ訪問介護 | 住み慣れた家で、これからも。（デザインサンプル）</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%23e07a5f'/%3E%3Cpath d='M10 18c2-5 10-5 12 0-2 3-10 3-12 0z' fill='%23fdf8f2'/%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--coral:#e07a5f;--deep:#b85c44;--ivory:#fdf8f2;--brown:#4a3a32;--sand:#f3e8dc;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Zen Maru Gothic',sans-serif;color:var(--brown);line-height:1.9;background:var(--ivory);}
+.demo-note{background:#fff3cd;color:#7a5c00;text-align:center;font-size:12px;padding:6px;}
+header{position:sticky;top:0;background:rgba(253,248,242,.97);border-bottom:1px solid #eaddd0;z-index:20;}
+.header-inner{max-width:1060px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:13px 20px;}
+.logo{font-weight:900;font-size:21px;color:var(--coral);}
+.logo small{display:block;font-size:11px;color:#a08876;font-weight:700;letter-spacing:1px;}
+.head-cta{display:flex;align-items:center;gap:14px;}
+.head-tel{text-align:right;font-size:11px;color:#a08876;}
+.head-tel b{display:block;font-size:19px;color:var(--brown);letter-spacing:1px;}
+.head-btn{background:var(--coral);color:#fff;text-decoration:none;font-size:13px;font-weight:700;padding:11px 22px;border-radius:30px;}
+.hero{max-width:1060px;margin:0 auto;padding:56px 20px 30px;display:grid;grid-template-columns:1.1fr 1fr;gap:36px;align-items:center;}
+.hero h1{font-size:34px;font-weight:900;line-height:1.5;}
+.hero h1 em{font-style:normal;color:var(--coral);}
+.hero p{margin-top:16px;font-size:15px;}
+.hero-cta{margin-top:26px;display:flex;gap:12px;flex-wrap:wrap;}
+.btn-main{background:var(--coral);color:#fff;text-decoration:none;font-weight:700;padding:15px 30px;border-radius:32px;font-size:15px;}
+.btn-sub{border:2px solid var(--coral);color:var(--coral);text-decoration:none;font-weight:700;padding:13px 26px;border-radius:32px;font-size:15px;background:#fff;}
+.hero-photo{height:300px;border-radius:20px;background:linear-gradient(135deg,#e9e2da,#d5cabf);display:flex;align-items:center;justify-content:center;color:#8a7a6d;font-size:14px;font-weight:700;letter-spacing:2px;}
+.strip{background:var(--coral);color:#fff;}
+.strip-inner{max-width:1060px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);text-align:center;padding:20px;gap:10px;}
+.strip b{display:block;font-size:24px;font-weight:900;}
+.strip span{font-size:12px;opacity:.92;}
+section{max-width:1060px;margin:0 auto;padding:60px 20px;}
+.sec-label{color:var(--coral);font-size:13px;font-weight:900;letter-spacing:3px;}
+h2{font-size:27px;font-weight:900;margin:6px 0 30px;}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.card{background:#fff;border-radius:18px;padding:26px;box-shadow:0 3px 14px rgba(180,140,110,.12);}
+.card .ph{height:120px;border-radius:12px;background:linear-gradient(135deg,#efe8e0,#ddd2c6);display:flex;align-items:center;justify-content:center;color:#9a8a7c;font-size:12px;font-weight:700;letter-spacing:1px;margin-bottom:16px;}
+.card h3{font-size:17px;font-weight:900;color:var(--deep);}
+.card p{font-size:13.5px;margin-top:8px;}
+.card .price{margin-top:12px;font-size:13px;font-weight:900;color:var(--coral);background:var(--sand);border-radius:8px;padding:6px 10px;display:inline-block;}
+.reasons{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+.reason{background:#fff;border-radius:16px;padding:24px;display:flex;gap:16px;box-shadow:0 3px 14px rgba(180,140,110,.10);}
+.reason .num{flex-shrink:0;width:44px;height:44px;border-radius:50%;background:var(--coral);color:#fff;font-weight:900;font-size:18px;display:flex;align-items:center;justify-content:center;}
+.reason h3{font-size:16px;font-weight:900;}
+.reason p{font-size:13.5px;margin-top:5px;}
+.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+.step{background:#fff;border-radius:16px;padding:22px 18px;text-align:center;box-shadow:0 3px 14px rgba(180,140,110,.10);}
+.step .sn{color:var(--coral);font-weight:900;font-size:13px;letter-spacing:2px;}
+.step h3{font-size:15px;font-weight:900;margin:6px 0;}
+.step p{font-size:12.5px;}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 3px 14px rgba(180,140,110,.10);}
+th,td{padding:14px 16px;font-size:14px;text-align:left;border-bottom:1px solid #f0e6da;}
+th{background:var(--sand);font-weight:900;width:46%;}
+td b{color:var(--coral);font-size:16px;}
+.note{font-size:12px;color:#9a8878;margin-top:12px;}
+.disclosure{background:#fff;border:2px solid var(--sand);border-radius:18px;padding:30px;}
+.disclosure .tag{display:inline-block;background:var(--coral);color:#fff;font-size:11px;font-weight:900;letter-spacing:1px;padding:4px 12px;border-radius:20px;margin-bottom:12px;}
+.disclosure h3{font-size:19px;font-weight:900;}
+.disclosure p{font-size:13.5px;margin-top:8px;}
+.doc-list{margin-top:18px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
+.doc{background:var(--ivory);border:1px solid #eaddd0;border-radius:12px;padding:16px;font-size:13px;font-weight:700;display:flex;align-items:center;gap:10px;}
+.doc svg{flex-shrink:0;}
+.company dl{display:grid;grid-template-columns:150px 1fr;background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 3px 14px rgba(180,140,110,.10);}
+.company dt{background:var(--sand);padding:14px 18px;font-size:13.5px;font-weight:900;border-bottom:1px solid #eaddd0;}
+.company dd{padding:14px 18px;font-size:13.5px;border-bottom:1px solid #f0e6da;}
+.recruit-band{background:linear-gradient(120deg,var(--coral),#d9906f);border-radius:20px;color:#fff;padding:36px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;}
+.recruit-band h3{font-size:21px;font-weight:900;}
+.recruit-band p{font-size:13.5px;margin-top:6px;opacity:.95;}
+.btn-white{background:#fff;color:var(--coral);text-decoration:none;font-weight:900;padding:14px 28px;border-radius:30px;font-size:14px;flex-shrink:0;}
+.contact{background:var(--sand);}
+.contact-inner{max-width:1060px;margin:0 auto;padding:60px 20px;text-align:center;}
+.contact h2{margin-bottom:8px;}
+.contact p{font-size:14px;}
+.tel-big{font-size:40px;font-weight:900;color:var(--coral);letter-spacing:2px;text-decoration:none;display:inline-block;margin:14px 0 4px;}
+.hours{font-size:13px;color:#8a7666;}
+footer{background:var(--brown);color:#cfc0b5;text-align:center;font-size:12px;padding:22px;}
+.fixbar{display:none;}
+@media(max-width:760px){
+ body{padding-bottom:58px;}
+ .hero{grid-template-columns:1fr;padding-top:36px;}
+ .hero h1{font-size:26px;}
+ .strip-inner{grid-template-columns:repeat(2,1fr);}
+ .cards,.reasons,.flow,.doc-list{grid-template-columns:1fr;}
+ .company dl{grid-template-columns:110px 1fr;}
+ nav{display:none;}
+ .head-tel{display:none;}
+ .fixbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:40;}
+ .fixbar a{flex:1;text-align:center;padding:15px 0;font-size:14px;font-weight:900;text-decoration:none;color:#fff;}
+ .fixbar .f-tel{background:var(--deep);}
+ .fixbar .f-line{background:var(--coral);}
+}
+</style>
+</head>
+<body>
+<div class="demo-note">このサイトはデザインサンプルです。会社名・数値はすべて架空のものです。</div>
+<header>
+ <div class="header-inner">
+  <div class="logo">そよかぜ訪問介護<small>○○市の訪問介護・介護保険対応</small></div>
+  <div class="head-cta">
+   <div class="head-tel">お気軽にご相談ください<b>000-0000-0000</b></div>
+   <a class="head-btn" href="#contact">無料相談</a>
+  </div>
+ </div>
+</header>
+
+<div class="hero">
+ <div>
+  <h1>住み慣れた家で、<br><em>これからも</em>暮らしていく。</h1>
+  <p>そよかぜ訪問介護は、○○市を中心に身体介護・生活援助をお届けする訪問介護事業所です。「施設に入る前に、できることがあるはず」。そんなご家族の想いに、ヘルパーが寄り添います。</p>
+  <div class="hero-cta">
+   <a class="btn-main" href="#contact">まずは無料相談</a>
+   <a class="btn-sub" href="#price">料金のめやす</a>
+  </div>
+ </div>
+ <div class="hero-photo">ヘルパーとご利用者様の写真</div>
+</div>
+
+<div class="strip">
+ <div class="strip-inner">
+  <div><b>12年</b><span>地域での運営実績</span></div>
+  <div><b>9名</b><span>介護福祉士在籍</span></div>
+  <div><b>365日</b><span>年中無休で対応</span></div>
+  <div><b>○○市全域</b><span>対応エリア</span></div>
+ </div>
+</div>
+
+<section id="services">
+ <div class="sec-label">SERVICE</div>
+ <h2>サービス内容</h2>
+ <div class="cards">
+  <div class="card">
+   <div class="ph">身体介護の様子（写真）</div>
+   <h3>身体介護</h3>
+   <p>食事・入浴・排せつの介助、着替えや体位変換のお手伝いなど、お体に直接ふれる介助を行います。</p>
+   <span class="price">自己負担のめやす 1回 244円〜</span>
+  </div>
+  <div class="card">
+   <div class="ph">生活援助の様子（写真）</div>
+   <h3>生活援助</h3>
+   <p>掃除・洗濯・調理・買い物代行など、日常生活のお手伝い。「これだけ頼みたい」も歓迎です。</p>
+   <span class="price">自己負担のめやす 1回 183円〜</span>
+  </div>
+  <div class="card">
+   <div class="ph">通院介助の様子（写真）</div>
+   <h3>通院乗降介助</h3>
+   <p>通院時の乗り降りや受診の付き添いをサポート。定期通院も単発のご利用もご相談ください。</p>
+   <span class="price">自己負担のめやす 1回 99円〜</span>
+  </div>
+ </div>
+ <p class="note">※ 介護保険1割負担の場合のめやすです。地域区分・加算・負担割合により変わります。詳しくはお問い合わせください。</p>
+</section>
+
+<section id="reasons" style="padding-top:0;">
+ <div class="sec-label">REASON</div>
+ <h2>そよかぜが選ばれる理由</h2>
+ <div class="reasons">
+  <div class="reason"><div class="num">1</div><div><h3>ヘルパーを固定できる限り同じ担当に</h3><p>「毎回違う人が来る」不安をなくすため、できる限り同じヘルパーが継続して伺う体制をとっています。</p></div></div>
+  <div class="reason"><div class="num">2</div><div><h3>ケアマネジャーさんとの連携を大切に</h3><p>サービス提供責任者が担当ケアマネジャー様とこまめに情報共有。状態の変化をすぐに報告します。</p></div></div>
+  <div class="reason"><div class="num">3</div><div><h3>30分だけ、週1回だけでも歓迎</h3><p>「こんな短時間で頼んでいいの？」という内容こそご相談ください。小さなご依頼から始められます。</p></div></div>
+  <div class="reason"><div class="num">4</div><div><h3>ご家族への報告を欠かしません</h3><p>訪問のたびに記録を残し、離れて暮らすご家族にも様子が伝わるようご報告の仕組みを整えています。</p></div></div>
+ </div>
+</section>
+
+<section id="flow" style="padding-top:0;">
+ <div class="sec-label">FLOW</div>
+ <h2>ご利用までの流れ</h2>
+ <div class="flow">
+  <div class="step"><div class="sn">STEP 1</div><h3>お電話でご相談</h3><p>要介護認定がまだの方も、手続きからご案内します。</p></div>
+  <div class="step"><div class="sn">STEP 2</div><h3>ケアマネと打合せ</h3><p>担当ケアマネジャー様とご希望を伺い、ケアプランを確認します。</p></div>
+  <div class="step"><div class="sn">STEP 3</div><h3>ご契約・ご説明</h3><p>重要事項をご説明のうえ、ご契約。訪問日時を決めます。</p></div>
+  <div class="step"><div class="sn">STEP 4</div><h3>サービス開始</h3><p>初回はサービス提供責任者が同行し、丁寧に引き継ぎます。</p></div>
+ </div>
+</section>
+
+<section id="price" style="padding-top:0;">
+ <div class="sec-label">PRICE</div>
+ <h2>料金のめやす（介護保険 1割負担の場合）</h2>
+ <table>
+  <tr><th>身体介護（20分以上30分未満）</th><td><b>244円</b> ／回</td></tr>
+  <tr><th>身体介護（30分以上1時間未満）</th><td><b>387円</b> ／回</td></tr>
+  <tr><th>生活援助（20分以上45分未満）</th><td><b>183円</b> ／回</td></tr>
+  <tr><th>生活援助（45分以上）</th><td><b>225円</b> ／回</td></tr>
+  <tr><th>通院等乗降介助</th><td><b>99円</b> ／回</td></tr>
+ </table>
+ <p class="note">※ 金額はめやすです。地域区分・各種加算・負担割合（1〜3割）により変わります。介護保険を使わない自費サービスもご用意しています。</p>
+</section>
+
+<section id="disclosure" style="padding-top:0;">
+ <div class="disclosure">
+  <span class="tag">重要事項等の公表</span>
+  <h3>運営情報の公表について</h3>
+  <p>介護保険法に基づき、当事業所の運営規程の概要・重要事項説明書等を掲載しています。ご契約前にご確認いただけます。</p>
+  <div class="doc-list">
+   <div class="doc"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e07a5f" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>運営規程の概要（PDF）</div>
+   <div class="doc"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e07a5f" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>重要事項説明書（PDF）</div>
+   <div class="doc"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#e07a5f" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>勤務体制・秘密保持等（PDF）</div>
+  </div>
+ </div>
+</section>
+
+<section id="company" style="padding-top:0;">
+ <div class="sec-label">COMPANY</div>
+ <h2>事業所概要</h2>
+ <div class="company">
+  <dl>
+   <dt>事業所名</dt><dd>そよかぜ訪問介護</dd>
+   <dt>運営法人</dt><dd>株式会社そよかぜケア（架空）</dd>
+   <dt>指定事業所番号</dt><dd>0000000000（訪問介護）</dd>
+   <dt>管理者</dt><dd>介護 花子（架空）</dd>
+   <dt>所在地</dt><dd>○○県○○市○○町0-0-0</dd>
+   <dt>営業時間</dt><dd>8:30〜17:30（サービス提供は年中無休）</dd>
+   <dt>対応エリア</dt><dd>○○市全域・△△町・□□町</dd>
+  </dl>
+ </div>
+</section>
+
+<section id="recruit" style="padding-top:0;">
+ <div class="recruit-band">
+  <div>
+   <h3>いっしょに働く仲間を募集しています</h3>
+   <p>登録ヘルパー・常勤スタッフ募集中。資格取得支援あり。週1回2時間からOKです。</p>
+  </div>
+  <a class="btn-white" href="#contact">採用について問い合わせる</a>
+ </div>
+</section>
+
+<div class="contact" id="contact">
+ <div class="contact-inner">
+  <div class="sec-label">CONTACT</div>
+  <h2>ご相談・お問い合わせ</h2>
+  <p>「介護保険ってどう使うの？」という段階のご相談も歓迎です。ケアマネジャー様からのご連絡もお待ちしています。</p>
+  <a class="tel-big" href="tel:0000000000">000-0000-0000</a>
+  <div class="hours">受付 8:30〜17:30（土日祝も電話対応）</div>
+ </div>
+</div>
+
+<footer>このページは制作サンプルです。掲載の事業所名・人物・数値はすべて架空のものです。</footer>
+
+<div class="fixbar">
+ <a class="f-tel" href="tel:0000000000">電話で相談</a>
+ <a class="f-line" href="#contact">無料相談はこちら</a>
+</div>
+</body>
+</html>

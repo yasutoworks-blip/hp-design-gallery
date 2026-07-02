@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>ひまわりデイサービス | 今日も行きたくなる場所。（デザインサンプル）</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%23f2a91e'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%23fff'/%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--sun:#f2a91e;--deep:#d18a00;--green:#6da34d;--cream:#fffbf0;--ink:#4a4335;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'M PLUS Rounded 1c',sans-serif;color:var(--ink);line-height:1.9;background:#fff;}
+.demo-note{background:#fff3cd;color:#7a5c00;text-align:center;font-size:12px;padding:6px;}
+header{position:sticky;top:0;background:#fff;box-shadow:0 1px 10px rgba(0,0,0,.06);z-index:20;}
+.header-inner{max-width:1080px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:12px 20px;}
+.logo{font-weight:900;font-size:22px;color:var(--deep);}
+.logo small{display:block;font-size:11px;color:#a89a80;font-weight:700;}
+.head-cta{display:flex;align-items:center;gap:14px;}
+.head-tel{text-align:right;font-size:11px;color:#a89a80;}
+.head-tel b{display:block;font-size:19px;color:var(--ink);letter-spacing:1px;}
+.head-btn{background:var(--sun);color:#fff;text-decoration:none;font-size:13px;font-weight:900;padding:11px 24px;border-radius:30px;}
+.hero{background:var(--cream);}
+.hero-inner{max-width:1080px;margin:0 auto;padding:56px 20px 40px;display:grid;grid-template-columns:1.1fr 1fr;gap:36px;align-items:center;}
+.hero h1{font-size:35px;font-weight:900;line-height:1.5;}
+.hero h1 em{font-style:normal;color:var(--sun);}
+.hero p{margin-top:14px;font-size:15px;}
+.hero-badges{margin-top:18px;display:flex;gap:10px;flex-wrap:wrap;}
+.badge{background:#fff;border:2px solid var(--sun);color:var(--deep);font-size:12.5px;font-weight:900;padding:6px 14px;border-radius:20px;}
+.hero-cta{margin-top:24px;display:flex;gap:12px;flex-wrap:wrap;}
+.btn-main{background:var(--sun);color:#fff;text-decoration:none;font-weight:900;padding:15px 32px;border-radius:32px;font-size:15px;box-shadow:0 4px 0 var(--deep);}
+.btn-sub{background:#fff;border:2px solid var(--green);color:var(--green);text-decoration:none;font-weight:900;padding:13px 26px;border-radius:32px;font-size:15px;}
+.hero-photo{height:300px;border-radius:24px;background:linear-gradient(135deg,#efe9db,#ddd4c0);display:flex;align-items:center;justify-content:center;color:#948871;font-size:14px;font-weight:700;letter-spacing:2px;}
+.strip{background:var(--green);color:#fff;}
+.strip-inner{max-width:1080px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);text-align:center;padding:20px;gap:10px;}
+.strip b{display:block;font-size:24px;font-weight:900;}
+.strip span{font-size:12px;opacity:.93;}
+section{max-width:1080px;margin:0 auto;padding:60px 20px;}
+.sec-label{color:var(--sun);font-size:13px;font-weight:900;letter-spacing:3px;}
+h2{font-size:27px;font-weight:900;margin:6px 0 30px;}
+.day{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;}
+.slot{background:var(--cream);border-radius:18px;padding:22px;display:flex;gap:16px;align-items:flex-start;}
+.slot .time{flex-shrink:0;background:var(--sun);color:#fff;font-weight:900;font-size:14px;border-radius:12px;padding:8px 12px;}
+.slot h3{font-size:16px;font-weight:900;}
+.slot p{font-size:13.5px;margin-top:4px;}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.card{background:#fff;border:2px solid #f3ead6;border-radius:20px;padding:26px;}
+.card .ph{height:120px;border-radius:14px;background:linear-gradient(135deg,#f0ead9,#e0d6bd);display:flex;align-items:center;justify-content:center;color:#998c72;font-size:12px;font-weight:700;margin-bottom:16px;}
+.card h3{font-size:17px;font-weight:900;color:var(--deep);}
+.card p{font-size:13.5px;margin-top:8px;}
+.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+.step{background:var(--cream);border-radius:18px;padding:22px 18px;text-align:center;}
+.step .sn{color:var(--green);font-weight:900;font-size:13px;letter-spacing:2px;}
+.step h3{font-size:15px;font-weight:900;margin:6px 0;}
+.step p{font-size:12.5px;}
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:16px;overflow:hidden;border:2px solid #f3ead6;}
+th,td{padding:14px 16px;font-size:14px;text-align:left;border-bottom:1px solid #f3ead6;}
+th{background:var(--cream);font-weight:900;width:46%;}
+td b{color:var(--deep);font-size:16px;}
+.note{font-size:12px;color:#a2937b;margin-top:12px;}
+.voice{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;}
+.v-card{background:var(--cream);border-radius:18px;padding:24px;}
+.v-card .who{font-size:12px;font-weight:900;color:var(--green);}
+.v-card p{font-size:13.5px;margin-top:6px;}
+.disclosure{background:#fff;border:2px solid #f3ead6;border-radius:20px;padding:30px;}
+.disclosure .tag{display:inline-block;background:var(--green);color:#fff;font-size:11px;font-weight:900;letter-spacing:1px;padding:4px 12px;border-radius:20px;margin-bottom:12px;}
+.disclosure h3{font-size:19px;font-weight:900;}
+.disclosure p{font-size:13.5px;margin-top:8px;}
+.doc-list{margin-top:18px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
+.doc{background:var(--cream);border-radius:12px;padding:16px;font-size:13px;font-weight:700;display:flex;align-items:center;gap:10px;}
+.company dl{display:grid;grid-template-columns:150px 1fr;background:#fff;border:2px solid #f3ead6;border-radius:16px;overflow:hidden;}
+.company dt{background:var(--cream);padding:14px 18px;font-size:13.5px;font-weight:900;border-bottom:1px solid #f3ead6;}
+.company dd{padding:14px 18px;font-size:13.5px;border-bottom:1px solid #f3ead6;}
+.recruit-band{background:linear-gradient(120deg,var(--sun),#f5c04e);border-radius:22px;color:#fff;padding:36px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;}
+.recruit-band h3{font-size:21px;font-weight:900;}
+.recruit-band p{font-size:13.5px;margin-top:6px;}
+.btn-white{background:#fff;color:var(--deep);text-decoration:none;font-weight:900;padding:14px 28px;border-radius:30px;font-size:14px;flex-shrink:0;}
+.contact{background:var(--cream);}
+.contact-inner{max-width:1080px;margin:0 auto;padding:60px 20px;text-align:center;}
+.contact p{font-size:14px;}
+.tel-big{font-size:40px;font-weight:900;color:var(--deep);letter-spacing:2px;text-decoration:none;display:inline-block;margin:14px 0 4px;}
+.hours{font-size:13px;color:#a2937b;}
+footer{background:var(--ink);color:#cfc5b2;text-align:center;font-size:12px;padding:22px;}
+.fixbar{display:none;}
+@media(max-width:760px){
+ body{padding-bottom:58px;}
+ .hero-inner{grid-template-columns:1fr;padding-top:36px;}
+ .hero h1{font-size:26px;}
+ .strip-inner{grid-template-columns:repeat(2,1fr);}
+ .cards,.day,.flow,.voice,.doc-list{grid-template-columns:1fr;}
+ .company dl{grid-template-columns:110px 1fr;}
+ .head-tel{display:none;}
+ .fixbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:40;}
+ .fixbar a{flex:1;text-align:center;padding:15px 0;font-size:14px;font-weight:900;text-decoration:none;color:#fff;}
+ .fixbar .f-tel{background:var(--deep);}
+ .fixbar .f-visit{background:var(--green);}
+}
+</style>
+</head>
+<body>
+<div class="demo-note">このサイトはデザインサンプルです。会社名・数値はすべて架空のものです。</div>
+<header>
+ <div class="header-inner">
+  <div class="logo">ひまわりデイサービス<small>○○市の通所介護・機能訓練</small></div>
+  <div class="head-cta">
+   <div class="head-tel">見学のご予約はこちら<b>000-0000-0000</b></div>
+   <a class="head-btn" href="#contact">見学予約</a>
+  </div>
+ </div>
+</header>
+
+<div class="hero">
+ <div class="hero-inner">
+  <div>
+   <h1>今日も<em>行きたくなる</em>、<br>もうひとつの居場所。</h1>
+   <p>ひまわりデイサービスは、機能訓練とレクリエーションを大切にする定員25名の通所介護です。送迎・入浴・昼食つき。まずは1日体験から、雰囲気を見にきませんか。</p>
+   <div class="hero-badges">
+    <span class="badge">送迎あり</span><span class="badge">入浴介助</span><span class="badge">手作り昼食</span><span class="badge">1日体験OK</span>
+   </div>
+   <div class="hero-cta">
+    <a class="btn-main" href="#contact">見学・体験を予約する</a>
+    <a class="btn-sub" href="#day">1日の流れを見る</a>
+   </div>
+  </div>
+  <div class="hero-photo">レクリエーションの様子（写真）</div>
+ </div>
+</div>
+
+<div class="strip">
+ <div class="strip-inner">
+  <div><b>定員25名</b><span>目の届く規模</span></div>
+  <div><b>8年</b><span>地域での運営実績</span></div>
+  <div><b>週6日</b><span>月〜土曜 営業</span></div>
+  <div><b>体験1日</b><span>昼食・入浴つき</span></div>
+ </div>
+</div>
+
+<section id="day">
+ <div class="sec-label">ONE DAY</div>
+ <h2>1日の流れ</h2>
+ <div class="day">
+  <div class="slot"><span class="time">9:00</span><div><h3>お迎え・健康チェック</h3><p>ご自宅までお迎えにあがり、到着後に血圧・体温を測定します。</p></div></div>
+  <div class="slot"><span class="time">10:00</span><div><h3>入浴・機能訓練</h3><p>順番に入浴。待ち時間は個別の機能訓練やリハビリ体操を行います。</p></div></div>
+  <div class="slot"><span class="time">12:00</span><div><h3>手作り昼食</h3><p>栄養士監修の食事を施設内で調理。きざみ食・減塩にも対応します。</p></div></div>
+  <div class="slot"><span class="time">13:30</span><div><h3>レクリエーション</h3><p>書道・園芸・脳トレ・季節の行事など、選べるプログラムをご用意。</p></div></div>
+  <div class="slot"><span class="time">15:00</span><div><h3>おやつ・ティータイム</h3><p>手作りおやつとお茶で、ゆったりおしゃべりの時間です。</p></div></div>
+  <div class="slot"><span class="time">16:00</span><div><h3>お送り</h3><p>ご自宅までお送りし、ご家族に今日の様子をお伝えします。</p></div></div>
+ </div>
+</section>
+
+<section id="services" style="padding-top:0;">
+ <div class="sec-label">SERVICE</div>
+ <h2>ひまわりの特徴</h2>
+ <div class="cards">
+  <div class="card">
+   <div class="ph">機能訓練の様子（写真）</div>
+   <h3>続けられる機能訓練</h3>
+   <p>「歩いてトイレに行ける」を守ることを目標に、一人ひとりに合わせた無理のない訓練メニューを組みます。</p>
+  </div>
+  <div class="card">
+   <div class="ph">食事の写真</div>
+   <h3>施設内調理の昼食</h3>
+   <p>できたてを提供できるのが小規模の強み。「ここのごはんが楽しみ」と言っていただける食事を目指しています。</p>
+  </div>
+  <div class="card">
+   <div class="ph">送迎車の写真</div>
+   <h3>ドアツードア送迎</h3>
+   <p>車いすのまま乗れるリフト車で、玄関から玄関まで。乗り降りもスタッフが介助するのでご家族は付き添い不要です。</p>
+  </div>
+ </div>
+</section>
+
+<section id="flow" style="padding-top:0;">
+ <div class="sec-label">FLOW</div>
+ <h2>ご利用までの流れ</h2>
+ <div class="flow">
+  <div class="step"><div class="sn">STEP 1</div><h3>見学・体験</h3><p>まずは雰囲気を見にきてください。1日体験は昼食・入浴つきです。</p></div>
+  <div class="step"><div class="sn">STEP 2</div><h3>ケアマネに相談</h3><p>担当ケアマネジャー様にご希望を伝え、ケアプランに組み込みます。</p></div>
+  <div class="step"><div class="sn">STEP 3</div><h3>ご契約</h3><p>重要事項をご説明のうえご契約。利用曜日を決めます。</p></div>
+  <div class="step"><div class="sn">STEP 4</div><h3>ご利用開始</h3><p>初日はスタッフがそばについて、ゆっくり慣れていただきます。</p></div>
+ </div>
+</section>
+
+<section id="price" style="padding-top:0;">
+ <div class="sec-label">PRICE</div>
+ <h2>料金のめやす（介護保険 1割負担・1回あたり）</h2>
+ <table>
+  <tr><th>要介護1</th><td><b>658円</b> ＋昼食代など</td></tr>
+  <tr><th>要介護2</th><td><b>777円</b> ＋昼食代など</td></tr>
+  <tr><th>要介護3</th><td><b>900円</b> ＋昼食代など</td></tr>
+  <tr><th>昼食代（おやつ含む）</th><td><b>650円</b> ／回（実費）</td></tr>
+ </table>
+ <p class="note">※ 7〜8時間利用・1割負担のめやすです。地域区分・各種加算・負担割合により変わります。要支援の方、体験利用の費用はお問い合わせください。</p>
+</section>
+
+<section id="voice" style="padding-top:0;">
+ <div class="sec-label">VOICE</div>
+ <h2>ご利用者・ご家族の声（サンプル）</h2>
+ <div class="voice">
+  <div class="v-card"><div class="who">80代女性・ご利用者（架空の例）</div><p>最初は気が進まなかったけれど、今では週2回が待ち遠しい。お昼ごはんがおいしいのと、みんなでやる園芸が楽しみです。</p></div>
+  <div class="v-card"><div class="who">50代女性・ご家族（架空の例）</div><p>送り迎えのたびに母の様子を細かく教えてくれるので、離れて暮らしていても安心です。連絡帳の手書きコメントがうれしい。</p></div>
+ </div>
+ <p class="note">※ 掲載の声はデザインサンプル用の架空のものです。実際の制作時はご利用者様の許可を得た実在の声に差し替えます。</p>
+</section>
+
+<section id="disclosure" style="padding-top:0;">
+ <div class="disclosure">
+  <span class="tag">重要事項等の公表</span>
+  <h3>運営情報の公表について</h3>
+  <p>介護保険法に基づき、当事業所の運営規程の概要・重要事項説明書等を掲載しています。ご契約前にご確認いただけます。</p>
+  <div class="doc-list">
+   <div class="doc">運営規程の概要（PDF）</div>
+   <div class="doc">重要事項説明書（PDF）</div>
+   <div class="doc">勤務体制・秘密保持等（PDF）</div>
+  </div>
+ </div>
+</section>
+
+<section id="company" style="padding-top:0;">
+ <div class="sec-label">COMPANY</div>
+ <h2>事業所概要</h2>
+ <div class="company">
+  <dl>
+   <dt>事業所名</dt><dd>ひまわりデイサービス</dd>
+   <dt>運営法人</dt><dd>合同会社ひまわり福祉会（架空）</dd>
+   <dt>指定事業所番号</dt><dd>0000000000（通所介護）</dd>
+   <dt>管理者</dt><dd>福祉 太郎（架空）</dd>
+   <dt>所在地</dt><dd>○○県○○市○○町0-0-0</dd>
+   <dt>営業日</dt><dd>月〜土曜 8:30〜17:30（日曜・年末年始休み）</dd>
+   <dt>定員</dt><dd>25名（通所介護・地域密着型）</dd>
+   <dt>送迎エリア</dt><dd>○○市内・△△町（片道20分圏内）</dd>
+  </dl>
+ </div>
+</section>
+
+<section id="recruit" style="padding-top:0;">
+ <div class="recruit-band">
+  <div>
+   <h3>スタッフ募集中です</h3>
+   <p>介護職員・看護職員・送迎ドライバー募集。無資格・未経験の方も資格取得支援があります。</p>
+  </div>
+  <a class="btn-white" href="#contact">採用について問い合わせる</a>
+ </div>
+</section>
+
+<div class="contact" id="contact">
+ <div class="contact-inner">
+  <div class="sec-label">CONTACT</div>
+  <h2>見学・体験のご予約</h2>
+  <p>ご本人が乗り気でなくても大丈夫。まずはご家族だけの見学も歓迎です。ケアマネジャー様からのご連絡もお待ちしています。</p>
+  <a class="tel-big" href="tel:0000000000">000-0000-0000</a>
+  <div class="hours">受付 8:30〜17:30（月〜土）</div>
+ </div>
+</div>
+
+<footer>このページは制作サンプルです。掲載の事業所名・人物・数値はすべて架空のものです。</footer>
+
+<div class="fixbar">
+ <a class="f-tel" href="tel:0000000000">電話をかける</a>
+ <a class="f-visit" href="#contact">見学を予約</a>
+</div>
+</body>
+</html>

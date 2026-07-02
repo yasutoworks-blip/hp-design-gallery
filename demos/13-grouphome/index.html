@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>グループホーム つきの家 | 月明かりのように、そっと寄り添う。（デザインサンプル）</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%236f5f8f'/%3E%3Cpath d='M20 8a9 9 0 1 0 4 12 8 8 0 0 1-4-12z' fill='%23f7f5f0'/%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;700;900&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--fuji:#6f5f8f;--deep:#544871;--kinari:#f7f5f0;--ink:#3b3644;--line:#e5e0d6;}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Noto Sans JP',sans-serif;color:var(--ink);line-height:2;background:var(--kinari);}
+h1,h2,h3,.serif{font-family:'Noto Serif JP',serif;}
+.demo-note{background:#fff3cd;color:#7a5c00;text-align:center;font-size:12px;padding:6px;}
+header{background:var(--kinari);border-bottom:1px solid var(--line);}
+.header-inner{max-width:1000px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:18px 20px;}
+.logo{font-family:'Noto Serif JP',serif;font-size:22px;font-weight:700;color:var(--fuji);letter-spacing:3px;}
+.logo small{display:block;font-size:10px;letter-spacing:2px;color:#8d8496;font-weight:400;}
+.head-cta{display:flex;align-items:center;gap:16px;}
+.head-tel{text-align:right;font-size:11px;color:#8d8496;}
+.head-tel b{display:block;font-size:18px;color:var(--ink);letter-spacing:1px;font-weight:700;}
+.head-btn{background:var(--fuji);color:#fff;text-decoration:none;font-size:13px;font-weight:700;padding:11px 24px;border-radius:3px;letter-spacing:1px;}
+.hero{max-width:1000px;margin:0 auto;padding:70px 20px 40px;text-align:center;}
+.hero h1{font-size:33px;font-weight:700;line-height:1.9;letter-spacing:3px;}
+.hero h1 em{font-style:normal;color:var(--fuji);}
+.hero p{margin-top:20px;font-size:14.5px;max-width:620px;margin-left:auto;margin-right:auto;}
+.hero-cta{margin-top:30px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+.btn-main{background:var(--fuji);color:#fff;text-decoration:none;font-weight:700;padding:15px 36px;border-radius:3px;font-size:14px;letter-spacing:2px;}
+.btn-sub{border:1px solid var(--fuji);color:var(--fuji);text-decoration:none;font-weight:700;padding:14px 32px;border-radius:3px;font-size:14px;letter-spacing:2px;background:#fff;}
+.hero-photo{max-width:1000px;margin:30px auto 0;height:340px;border-radius:4px;background:linear-gradient(135deg,#e6e2d9,#d3cec2);display:flex;align-items:center;justify-content:center;color:#8d8478;font-size:14px;letter-spacing:3px;}
+.vacancy{max-width:1000px;margin:28px auto 0;padding:0 20px;}
+.vacancy-box{background:#fff;border:1px solid var(--line);border-left:4px solid var(--fuji);padding:18px 24px;display:flex;align-items:center;gap:18px;flex-wrap:wrap;}
+.vacancy-box b{font-size:15px;color:var(--deep);}
+.vacancy-box span{font-size:13px;color:#77708a;}
+section{max-width:1000px;margin:0 auto;padding:64px 20px;}
+.sec-label{color:var(--fuji);font-size:12px;font-weight:700;letter-spacing:4px;}
+h2{font-size:26px;font-weight:700;margin:8px 0 30px;letter-spacing:2px;}
+.life{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+.l-card{background:#fff;border:1px solid var(--line);}
+.l-card .ph{height:150px;background:linear-gradient(135deg,#e9e5dc,#d8d2c5);display:flex;align-items:center;justify-content:center;color:#918a7d;font-size:12px;letter-spacing:2px;}
+.l-card .body{padding:22px;}
+.l-card h3{font-size:16.5px;font-weight:700;color:var(--deep);letter-spacing:1px;}
+.l-card p{font-size:13px;margin-top:8px;line-height:1.9;}
+.philosophy{background:var(--fuji);color:#f4f1fa;}
+.philosophy-inner{max-width:1000px;margin:0 auto;padding:64px 20px;text-align:center;}
+.philosophy h2{color:#fff;}
+.philosophy .sec-label{color:#c3b8dd;}
+.philosophy p{font-size:14.5px;max-width:640px;margin:0 auto;line-height:2.2;}
+.reasons{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+.reason{background:#fff;border:1px solid var(--line);padding:26px;}
+.reason h3{font-size:16px;font-weight:700;color:var(--deep);display:flex;align-items:center;gap:12px;}
+.reason h3::before{content:"";width:20px;height:1px;background:var(--fuji);}
+.reason p{font-size:13px;margin-top:8px;}
+table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);}
+th,td{padding:14px 18px;font-size:14px;text-align:left;border-bottom:1px solid var(--line);}
+th{background:#efece4;font-weight:700;width:46%;}
+td b{color:var(--deep);font-size:16px;}
+.note{font-size:12px;color:#8d8478;margin-top:12px;}
+.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:var(--line);border:1px solid var(--line);}
+.step{background:#fff;padding:24px 18px;text-align:center;}
+.step .sn{color:var(--fuji);font-weight:700;font-size:12px;letter-spacing:3px;}
+.step h3{font-size:15px;font-weight:700;margin:8px 0 6px;}
+.step p{font-size:12.5px;line-height:1.8;}
+.disclosure{background:#fff;border:1px solid var(--line);padding:32px;}
+.disclosure .tag{display:inline-block;background:var(--deep);color:#fff;font-size:11px;font-weight:700;letter-spacing:2px;padding:5px 14px;margin-bottom:14px;}
+.disclosure h3{font-size:19px;font-weight:700;letter-spacing:1px;}
+.disclosure p{font-size:13.5px;margin-top:8px;}
+.doc-list{margin-top:20px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
+.doc{background:var(--kinari);border:1px solid var(--line);padding:16px;font-size:13px;font-weight:700;}
+.company dl{display:grid;grid-template-columns:170px 1fr;background:#fff;border:1px solid var(--line);}
+.company dt{background:#efece4;padding:14px 18px;font-size:13.5px;font-weight:700;border-bottom:1px solid var(--line);}
+.company dd{padding:14px 18px;font-size:13.5px;border-bottom:1px solid var(--line);}
+.recruit-band{background:#fff;border:1px solid var(--line);border-top:4px solid var(--fuji);padding:34px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;}
+.recruit-band h3{font-size:20px;font-weight:700;letter-spacing:1px;}
+.recruit-band p{font-size:13.5px;margin-top:6px;color:#6e6880;}
+.btn-outline{border:1px solid var(--fuji);color:var(--fuji);text-decoration:none;font-weight:700;padding:14px 30px;font-size:13.5px;letter-spacing:1px;flex-shrink:0;}
+.contact{background:var(--deep);color:#f4f1fa;}
+.contact-inner{max-width:1000px;margin:0 auto;padding:64px 20px;text-align:center;}
+.contact h2{color:#fff;}
+.contact .sec-label{color:#c3b8dd;}
+.contact p{font-size:14px;}
+.tel-big{font-family:'Noto Serif JP',serif;font-size:40px;font-weight:700;color:#fff;letter-spacing:3px;text-decoration:none;display:inline-block;margin:16px 0 4px;}
+.hours{font-size:13px;color:#c3b8dd;}
+footer{background:#2e2a38;color:#9a93a8;text-align:center;font-size:12px;padding:22px;}
+.fixbar{display:none;}
+@media(max-width:820px){
+ body{padding-bottom:58px;}
+ .hero h1{font-size:24px;letter-spacing:1px;}
+ .hero{padding-top:44px;}
+ .life,.reasons,.doc-list{grid-template-columns:1fr;}
+ .flow{grid-template-columns:1fr 1fr;}
+ .company dl{grid-template-columns:120px 1fr;}
+ .head-tel{display:none;}
+ .fixbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:40;}
+ .fixbar a{flex:1;text-align:center;padding:15px 0;font-size:14px;font-weight:700;text-decoration:none;color:#fff;}
+ .fixbar .f-tel{background:var(--deep);}
+ .fixbar .f-visit{background:var(--fuji);}
+}
+</style>
+</head>
+<body>
+<div class="demo-note">このサイトはデザインサンプルです。会社名・数値はすべて架空のものです。</div>
+<header>
+ <div class="header-inner">
+  <div class="logo">つきの家<small>認知症対応型共同生活介護（グループホーム）</small></div>
+  <div class="head-cta">
+   <div class="head-tel">見学のご予約・空室のご確認<b>000-0000-0000</b></div>
+   <a class="head-btn" href="#contact">見学のご予約</a>
+  </div>
+ </div>
+</header>
+
+<div class="hero">
+ <h1>月明かりのように、<br><em>そっと寄り添う</em>暮らしを。</h1>
+ <p>つきの家は、定員9名の認知症対応型グループホームです。大きな施設にはない「家の暮らし」を守りながら、専門スタッフが24時間見守ります。</p>
+ <div class="hero-cta">
+  <a class="btn-main" href="#contact">見学のご予約</a>
+  <a class="btn-sub" href="#price">費用のめやす</a>
+ </div>
+</div>
+<div class="hero-photo">リビングでの団らんの写真</div>
+
+<div class="vacancy">
+ <div class="vacancy-box">
+  <b>空室状況：現在 1室（サンプル表記）</b>
+  <span>見学は随時受け付けています。入居についてのご相談はお電話にてどうぞ。</span>
+ </div>
+</div>
+
+<section id="life">
+ <div class="sec-label">LIFE</div>
+ <h2>つきの家の暮らし</h2>
+ <div class="life">
+  <div class="l-card">
+   <div class="ph">台所での調理風景（写真）</div>
+   <div class="body"><h3>できることは、ご自分で</h3><p>野菜を切る、洗濯物をたたむ。役割のある暮らしが、認知症の進行をゆるやかにすると私たちは考えています。</p></div>
+  </div>
+  <div class="l-card">
+   <div class="ph">個室の写真</div>
+   <div class="body"><h3>使い慣れた家具と、個室で</h3><p>お部屋はすべて個室。長年使われたタンスや椅子をそのまま持ち込んで、自分の部屋をつくっていただけます。</p></div>
+  </div>
+  <div class="l-card">
+   <div class="ph">庭・散歩の写真</div>
+   <div class="body"><h3>季節を感じる小さな庭</h3><p>春は桜、秋は焼き芋。庭仕事や近所への散歩など、外の空気にふれる時間を毎日の暮らしに織り込んでいます。</p></div>
+  </div>
+ </div>
+</section>
+
+<div class="philosophy">
+ <div class="philosophy-inner">
+  <div class="sec-label">PHILOSOPHY</div>
+  <h2>「その人らしさ」が、いちばんの薬</h2>
+  <p>認知症になっても、その方の人生の続きはここにあります。できなくなったことを数えるのではなく、いまできること、好きだったこと、誇りにしてきたことを暮らしの真ん中に置く。それがつきの家の介護です。</p>
+ </div>
+</div>
+
+<section id="reasons">
+ <div class="sec-label">REASON</div>
+ <h2>ご家族に選ばれる理由</h2>
+ <div class="reasons">
+  <div class="reason"><h3>定員9名・顔の見える介護</h3><p>1ユニット9名だから、スタッフ全員が入居者様全員の性格や生活歴を把握しています。</p></div>
+  <div class="reason"><h3>24時間の見守りと夜間体制</h3><p>夜間も職員が常駐。急な体調の変化には協力医療機関と連携して対応します。</p></div>
+  <div class="reason"><h3>ご家族との連絡を細やかに</h3><p>毎月のお便りと写真で暮らしの様子をお伝えします。面会はいつでも歓迎です。</p></div>
+  <div class="reason"><h3>看取りまで、ここで</h3><p>ご本人とご家族が望まれる場合、協力医と連携し、住み慣れたつきの家での看取りに対応します。</p></div>
+ </div>
+</section>
+
+<section id="price" style="padding-top:0;">
+ <div class="sec-label">PRICE</div>
+ <h2>費用のめやす（月額）</h2>
+ <table>
+  <tr><th>家賃</th><td><b>60,000円</b></td></tr>
+  <tr><th>食費</th><td><b>42,000円</b></td></tr>
+  <tr><th>水道光熱費</th><td><b>15,000円</b></td></tr>
+  <tr><th>介護保険自己負担（要介護2・1割の場合）</th><td><b>約25,000円</b></td></tr>
+  <tr><th>月額合計のめやす</th><td><b>約142,000円</b></td></tr>
+ </table>
+ <p class="note">※ 金額はサンプルのめやすです。介護度・負担割合・加算により変わります。医療費・理美容代・おむつ代等は別途実費です。</p>
+</section>
+
+<section id="flow" style="padding-top:0;">
+ <div class="sec-label">FLOW</div>
+ <h2>ご入居までの流れ</h2>
+ <div class="flow">
+  <div class="step"><div class="sn">STEP 1</div><h3>ご見学</h3><p>暮らしの時間帯に合わせてご案内します。ご家族だけでも構いません。</p></div>
+  <div class="step"><div class="sn">STEP 2</div><h3>お申し込み</h3><p>申込書のご提出後、面談の日程を調整します。</p></div>
+  <div class="step"><div class="sn">STEP 3</div><h3>ご本人との面談</h3><p>ご自宅や入院先に伺い、心身の状態とご希望を確認します。</p></div>
+  <div class="step"><div class="sn">STEP 4</div><h3>ご契約・ご入居</h3><p>重要事項をご説明のうえご契約。お引越しもお手伝いします。</p></div>
+ </div>
+ <p class="note">※ 入居対象：○○市に住民票があり、要支援2または要介護1以上の認知症の診断がある方（地域密着型サービスのため）。</p>
+</section>
+
+<section id="disclosure" style="padding-top:0;">
+ <div class="disclosure">
+  <span class="tag">重要事項等の公表</span>
+  <h3>運営情報の公表について</h3>
+  <p>介護保険法に基づき、当ホームの運営規程の概要・重要事項説明書等を掲載しています。ご契約前にご確認いただけます。</p>
+  <div class="doc-list">
+   <div class="doc">運営規程の概要（PDF）</div>
+   <div class="doc">重要事項説明書（PDF）</div>
+   <div class="doc">勤務体制・秘密保持等（PDF）</div>
+  </div>
+ </div>
+</section>
+
+<section id="company" style="padding-top:0;">
+ <div class="sec-label">FACILITY</div>
+ <h2>施設概要</h2>
+ <div class="company">
+  <dl>
+   <dt>施設名</dt><dd>グループホーム つきの家</dd>
+   <dt>運営法人</dt><dd>株式会社つきのケア（架空）</dd>
+   <dt>指定事業所番号</dt><dd>0000000000（認知症対応型共同生活介護）</dd>
+   <dt>管理者</dt><dd>介護 月子（架空）</dd>
+   <dt>所在地</dt><dd>○○県○○市○○町0-0-0</dd>
+   <dt>定員</dt><dd>9名（1ユニット・全室個室）</dd>
+   <dt>協力医療機関</dt><dd>○○内科クリニック・○○歯科（架空）</dd>
+   <dt>面会時間</dt><dd>9:00〜19:00（事前連絡で時間外も相談可）</dd>
+  </dl>
+ </div>
+</section>
+
+<section id="recruit" style="padding-top:0;">
+ <div class="recruit-band">
+  <div>
+   <h3>介護スタッフを募集しています</h3>
+   <p>夜勤専従・パート同時募集。小規模ホームでじっくり向き合う介護がしたい方、見学からどうぞ。</p>
+  </div>
+  <a class="btn-outline" href="#contact">採用について問い合わせる</a>
+ </div>
+</section>
+
+<div class="contact" id="contact">
+ <div class="contact-inner">
+  <div class="sec-label">CONTACT</div>
+  <h2>見学のご予約・ご相談</h2>
+  <p>「まだ入居は先だけれど、話だけ聞きたい」というご相談も歓迎です。ケアマネジャー様・病院連携室からのご連絡もお待ちしています。</p>
+  <a class="tel-big" href="tel:0000000000">000-0000-0000</a>
+  <div class="hours">受付 9:00〜18:00（年中無休）</div>
+ </div>
+</div>
+
+<footer>このページは制作サンプルです。掲載の施設名・人物・数値はすべて架空のものです。</footer>
+
+<div class="fixbar">
+ <a class="f-tel" href="tel:0000000000">電話で相談</a>
+ <a class="f-visit" href="#contact">見学を予約</a>
+</div>
+</body>
+</html>
